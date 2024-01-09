@@ -1,20 +1,20 @@
+import "./App.css"
+import { useEffect, useState } from "react";
+import { getArtworks } from "../apiCall";
+
 function App() {
+  const [artworks, setArtworks] = useState([])
+  useEffect(() => {
+    getArtworks()
+    .then(artworkData => setArtworks(artworkData))
+    .catch(err => console.error(err.message))
+  }, [])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="article-app">
+      <h1>Article</h1>
+    </main>
   );
 }
 

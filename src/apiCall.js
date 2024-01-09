@@ -1,7 +1,7 @@
-const API_KEY = process.env.REACT_APP_NEWS_KEY;
+const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY;
 
 export const getArtworks= () => {
-  return fetch(`https://api.harvardartmuseums.org/image?apikey=${API_KEY}`)
+  return fetch(`http://api.harvardartmuseums.org/image?apikey=${REACT_APP_API_KEY}`)
   .then((response) => {
     if(response.ok){
       console.log(response)
