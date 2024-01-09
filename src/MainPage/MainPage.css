@@ -1,0 +1,11 @@
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.img-work {
+  width: 20vw;
+  height: 40vh;
+  align-self: center;
+}
