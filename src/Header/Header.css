@@ -4,11 +4,16 @@
   justify-content: center;
   width: 100%;
   background-color: #6c0f16;
+  box-sizing: border-box;
+  box-shadow: .5em .5em .5em .15em black;
 }
 
 .heading-text {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Salsa', cursive;
   font-size: 3.8em;
   color: #57886c;
   letter-spacing: .11em;
+  font-style: italic;
+  font-weight: bolder;
 }
+
