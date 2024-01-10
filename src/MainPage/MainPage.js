@@ -1,17 +1,20 @@
 import './MainPage.css'
 import Header from '../Header/Header'
+import { Link } from 'react-router-dom'
 
-const MainPage = ({artworks}) => {
+const MainPage = ({ artworks}) => {
   const artwork = artworks.map(work => {
-   return (
-    <img className="img-work" src={work.baseimageurl} alt={work.alttext} />
-   )
+    return (
+      <Link className='link' to={`/details/${work.id}`}>
+        <img className="img-work" src={work.baseimageurl} alt={work.alttext} />
+      </Link>
+    )
   })
   return (
     <main className='main-page'>
-      <Header/>
+      <Header />
       <div className='artwork-container'>
-      {artwork}
+        {artwork}
       </div>
     </main>
   )
