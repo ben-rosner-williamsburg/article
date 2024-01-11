@@ -6,11 +6,17 @@ import MainPage from '../MainPage/MainPage'
 
 function App() {
   const [artworks, setArtworks] = useState([])
+  const [error, setError] = useState("")
+
   useEffect(() => {
+    fetchArtworks()
+  }, [])
+
+  const fetchArtworks = () => {
     getArtworks()
     .then(artworkData => setArtworks(artworkData.records))
     .catch(err => console.error(err.message))
-  }, [])
+  }
 
 
   return (
