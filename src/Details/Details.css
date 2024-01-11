@@ -1,0 +1,24 @@
+.details-page {
+  display: flex;
+  flex-direction: column;
+  background-color: #57886c;
+  height: 100vh;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f4f3ee;
+}
+
+.image {
+  width: 40vw;
+  height: 30vh;
+  box-sizing: border-box;
+  box-shadow: .5em .5em .5em .15em black;
+}
+
+.artwork-element{
+  font-family: 'Salsa', cursive;
+}
