@@ -6,11 +6,10 @@ import MainPage from '../MainPage/MainPage'
 import Details from '../Details/Details'
 
 function App() {
-  const [artworks, setArtworks] = useState([])
-  const [error, setError] = useState("")
+  const [artworks, setArtworks] = useState([]);
 
   useEffect(() => {
-    fetchArtworks()
+    fetchArtworks();
   }, [])
 
   const fetchArtworks = () => {

@@ -2,17 +2,16 @@ import './Details.css'
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getArtwork } from "../apiCalls";
-import Header from '../Header/Header'
+import BackButton from '../BackButton/BackButton';
 
 function Details() {
-  const [artwork, setArtwork] = useState([])
-  const [error, setError] = useState("")
+  const [artwork, setArtwork] = useState([]);
   const params = useParams();
 
   let id = params.id;
   useEffect(() => {
     fetchArtwork(id);
-  }, [])
+  }, [id])
 
 
   const fetchArtwork = (id) => {
@@ -23,18 +22,20 @@ function Details() {
   const work = artwork.map(work => {
     return (
       <div className='details'>
-      <img className='artwork-element image' src={work.images[0].baseimageurl}/>
-      <h1 className='artwork-element title'> Title: {work.title}</h1>
-      <h3 className="artwork-element artist-name">Artist: {work.people[0].name}</h3>
-      <h4 className='artwork-element division'> Division: {work.division} </h4>
-
+        <img className='artwork-element image' alt={work.images[0].alttext} src={work.images[0].baseimageurl} />
+        <h1 className='artwork-element title'> Title: {work.title}</h1>
+        <h3 className="artwork-element artist-name">Artist: {work.people[0].name}</h3>
+        <h4 className='artwork-element division'> Division: {work.division} </h4>
+        <a className='artwork-element link' href={work.url}>More Info</a>
       </div>
     )
   }
   )
   return (
     <section className="details-page" id={params.id}>
-          <Header/>
+      <section className='back-btn-container'>
+        <BackButton className="back-button" />
+      </section>
       <h3 className="artwork-facts">{work}</h3>
     </section>
   )

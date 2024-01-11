@@ -1,0 +1,18 @@
+.btn-container {
+  display: flex;
+  align-items: flex-start;
+  width: 15vw;
+  height: 10vh;
+}
+
+.back-text {
+  font-size: 10vh;
+  text-align: justify;
+  border: none;
+  color: #6c0f16;
+  margin: 0;
+}
+
+.back-link {
+  text-decoration: none;
+}
