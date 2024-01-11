@@ -1,6 +1,6 @@
 import "./App.css"
 import { useEffect, useState } from "react";
-import { getArtworks } from "../apiCall";
+import { getArtworks } from "../apiCalls";
 import { Routes, Route } from 'react-router-dom'
 import MainPage from '../MainPage/MainPage'
 
