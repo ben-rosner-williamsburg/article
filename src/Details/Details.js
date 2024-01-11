@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getArtwork } from "../apiCalls";
 import Header from '../Header/Header'
+import BackButton from '../BackButton/BackButton';
 
 function Details() {
   const [artwork, setArtwork] = useState([])
@@ -34,7 +35,10 @@ function Details() {
   )
   return (
     <section className="details-page" id={params.id}>
-          <Header/>
+      <section className='elements-container'>
+        <BackButton className="back-button" />
+        <h1 className='detail-heading-text'>Article</h1>
+      </section>
       <h3 className="artwork-facts">{work}</h3>
     </section>
   )
