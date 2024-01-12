@@ -8,6 +8,7 @@ import Favorites from '../Favorites/Favorites'
 
 function App() {
   const [artworks, setArtworks] = useState([]);
+  const [faves, setFaves] = useState([])
 
   useEffect(() => {
     fetchArtworks();
@@ -19,12 +20,17 @@ function App() {
     .catch(err => console.error(err.message))
   }
 
+  const addFave = (newFave) => {
+    setFaves([...faves, newFave])
+  }
+
+
   return (
     <main className="article-app">
       <Routes>
         <Route path="/" element={<MainPage artworks={artworks}/>} />
-        <Route path="/details/:id" element={<Details/>} />
-        <Route path="/favorites" element={<Favorites/>} />
+        <Route path="/details/:id" element={<Details addFave={addFave}/>} />
+        <Route path="/favorites" element={<Favorites faves={faves}/>} />
       </Routes>
     </main>
   );

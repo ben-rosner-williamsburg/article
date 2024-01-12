@@ -1,13 +1,16 @@
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   width: 100%;
   background-color: #6c0f16;
   box-sizing: border-box;
   box-shadow: .5em .5em .5em .15em black;
 }
 
+.heading-text-container {
+  width: 100vw;
+ text-align: center;
+}
 .heading-text {
   font-family: 'Salsa', cursive;
   font-size: 3.8em;
@@ -15,5 +18,21 @@
   letter-spacing: .11em;
   font-style: italic;
   font-weight: bolder;
+  align-items: center;
 }
+
+.favorites-link-container {
+  display: flex;
+  align-items: flex-end;
+  width: 10vw;
+  height: 15vh;
+}
+
+.favorite-link {
+  font-size: 4.8em;
+  text-decoration: none;
+  margin-right: 1.8vw;
+}
+
+
 
