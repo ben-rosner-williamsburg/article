@@ -7,11 +7,10 @@ import Details from '../Details/Details'
 import Favorites from '../Favorites/Favorites'
 
 function App() {
-  const [artworks, setArtworks] = useState([])
-  const [error, setError] = useState("")
+  const [artworks, setArtworks] = useState([]);
 
   useEffect(() => {
-    fetchArtworks()
+    fetchArtworks();
   }, [])
 
   const fetchArtworks = () => {

@@ -6,13 +6,19 @@
   height: 100vh;
 }
 
+.details {
+   text-align: center;
+}
 
 .elements-container {
   display: flex;
   flex-direction: row;
   background-color: #f4f3ee;
   width: 100vw;
-  text-align: center;
+}
+
+.back-button {
+  justify-self: flex-start;
 }
 
 .image {
@@ -43,13 +49,18 @@
   color: blue;
 }
 
-.detail-heading-text {
+.header-container {
   display: flex;
+  align-self: center;
+  width: 100vw;
+}
+.detail-heading-text {
   color: #57886c;
   font-family: 'Salsa', cursive;
-  align-self: center;
+  justify-self: center;
   font-style: italic;
   font-weight: bolder;
   font-size: 3.8em;
   letter-spacing: .11em;
+  text-align: center;
 }
