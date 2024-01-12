@@ -11,20 +11,18 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  text-align: center;
 }
 
-.img-work, .no-image {
+.img-work {
   width: 30vw;
-  height: 40vh;
+  height: 60vh;
   align-self: center;
-  box-shadow: .5em .5em .5em .15em black;
+  text-align: center;
+  box-shadow: .5em .5em .5em .5em black;
 }
-
 
 .img-work:hover {
   background-color: white;
   cursor: pointer;
   opacity: .1;
 }
-

@@ -1,35 +1,28 @@
 import './MainPage.css'
 import Header from '../Header/Header'
-import {Link, useParams} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const MainPage = ({ artworks }) => {
-  let id = useParams()
-  const artwork = artworks.map(work => {
-    if (!work.primaryimageurl){
-      return <h1 class="no-image">"No image found!"</h1>
-    }
-    else {
-      return (
-        <Link key={work.id} to={`/details/${id}`}>
-        <img
-          className="img-work"
-          src={work.primaryimageurl}
-          id={work.id}
-          alt={work.description}
-        />
-        </Link>
-      )
-    }   
-})
-
-return (
-  <main className='main-page'>
-    <Header />
-    <div className='artwork-container'>
-      {artwork}
-    </div>
-  </main>
-)
+  const artwork = artworks.filter((work) => work.primaryimageurl !== null 
+  && work.peoplecount > 0)
+  const artImage = artwork.map(work => {
+    return (
+      <Link key={work.id} to={`/details/${work.id}`}>
+      <img src={work.primaryimageurl}
+        alt={work.description}
+        className='img-work'
+      />
+      </Link>
+    )
+  })
+  return (
+    <main className='main-page'>
+      <Header />
+      <div className='artwork-container'>
+        {artImage}
+      </div>
+    </main>
+  )
 }
 
 export default MainPage;

@@ -3,7 +3,7 @@
   flex-direction: column;
   background-color: #57886c;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .details {
@@ -22,8 +22,8 @@
 }
 
 .image {
-  width: 40vw;
-  height: 30vh;
+  width: 30vw;
+  height: 60vh;
   box-sizing: border-box;
   box-shadow: .5em .5em .5em .15em black;
 }
@@ -51,7 +51,8 @@
 
 .header-container {
   display: flex;
-  align-self: center;
+  flex-direction: row;
+  justify-content: center;
   width: 100vw;
 }
 .detail-heading-text {
@@ -63,4 +64,12 @@
   font-size: 3.8em;
   letter-spacing: .11em;
   text-align: center;
+  margin-left: -14.5vw;
+}
+
+.heart-button {
+    font-size: 4.8em;
+    text-decoration: none;
+    margin-right: 1.8vw;
+    cursor: pointer;
 }
