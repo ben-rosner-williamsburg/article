@@ -4,6 +4,7 @@ import { getArtworks } from "../apiCalls";
 import { Routes, Route } from 'react-router-dom'
 import MainPage from '../MainPage/MainPage'
 import Details from '../Details/Details'
+import Favorites from '../Favorites/Favorites'
 
 function App() {
   const [artworks, setArtworks] = useState([]);
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage artworks={artworks}/>} />
         <Route path="/details/:id" element={<Details/>} />
+        <Route path="/favorites" element={<Favorites/>} />
       </Routes>
     </main>
   );

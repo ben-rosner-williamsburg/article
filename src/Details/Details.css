@@ -2,15 +2,23 @@
   display: flex;
   flex-direction: column;
   background-color: #57886c;
+  align-items: center;
   height: 100vh;
 }
 
 .details {
+   text-align: center;
+}
+
+.elements-container {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   background-color: #f4f3ee;
   width: 100vw;
+}
+
+.back-button {
+  justify-self: flex-start;
 }
 
 .image {
@@ -20,13 +28,20 @@
   box-shadow: .5em .5em .5em .15em black;
 }
 
-.artwork-element{
+.artwork-element {
   font-family: 'Salsa', cursive;
+  justify-content: center;
+  font-size: 1.2em;
+  letter-spacing: .11em;
+  color: #f4f3ee;
+  text-align: center;
 }
 
 .link {
+  display: flex;
   text-decoration: none;
   color: blue;
+  text-align: center;
 }
 
 .link:visited {
@@ -34,3 +49,18 @@
   color: blue;
 }
 
+.header-container {
+  display: flex;
+  align-self: center;
+  width: 100vw;
+}
+.detail-heading-text {
+  color: #57886c;
+  font-family: 'Salsa', cursive;
+  justify-self: center;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 3.8em;
+  letter-spacing: .11em;
+  text-align: center;
+}

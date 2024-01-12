@@ -33,8 +33,11 @@ function Details() {
   )
   return (
     <section className="details-page" id={params.id}>
-      <section className='back-btn-container'>
-        <BackButton className="back-button" />
+      <section className='elements-container'>
+      <BackButton className="back-button" />
+        <section className="header-container">
+          <h1 className='detail-heading-text'>Article</h1>
+        </section>
       </section>
       <h3 className="artwork-facts">{work}</h3>
     </section>
