@@ -22,7 +22,7 @@ function Details() {
   const work = artwork.map(work => {
     return (
       <div className='details'>
-        <img className='artwork-element image' alt={work.images[0].alttext} src={work.images[0].baseimageurl} />
+        <img className='artwork-element image' alt={work.description} src={work.primaryimageurl} />
         <h1 className='artwork-element title'> Title: {work.title}</h1>
         <h3 className="artwork-element artist-name">Artist: {work.people[0].name}</h3>
         <h4 className='artwork-element division'> Division: {work.division} </h4>

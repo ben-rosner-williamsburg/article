@@ -15,6 +15,7 @@
   flex-direction: row;
   background-color: #f4f3ee;
   width: 100vw;
+  max-height: 20vh;
 }
 
 .back-button {
@@ -51,7 +52,8 @@
 
 .header-container {
   display: flex;
-  align-self: center;
+  flex-direction: row;
+ justify-content: center;
   width: 100vw;
 }
 .detail-heading-text {
@@ -63,4 +65,5 @@
   font-size: 3.8em;
   letter-spacing: .11em;
   text-align: center;
+  margin-left: -14.5vw;
 }
