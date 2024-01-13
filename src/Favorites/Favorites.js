@@ -3,17 +3,18 @@ import Header from '../Header/Header'
 import propTypes from 'prop-types'
 
 function Favorites({faves, removeFave}) {
-  const faveImages = faves.map(faveWorks => faveWorks.map(work =>{
+  console.log(faves)
+  const faveImages = faves.map(faveWork => {
       return (
-        <div className='img' key={work.id}>
-        <img src={work.primaryimageurl}
-          alt={work.description}
+        <div className='img' key={faveWork.id}>
+        <img src={faveWork.primaryimageurl}
+          alt={faveWork.description}
           className='img-work'
         />
-        <h1 className='remove-fave' onClick={(work) => {removeFave(work.id)}}>❌</h1>
+        <h1 className='remove-fave' onClick={() => {removeFave(faveWork.id)}}>❌</h1>
         </div>
       )}
-  )) 
+  )
   return (
     <main className='faves-page'>
       <Header/>
