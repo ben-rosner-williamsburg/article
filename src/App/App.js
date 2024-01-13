@@ -23,13 +23,14 @@ function App() {
   }
 
   const addFave = (newFave) => {
-        const duplicateRemover = faves.filter(fave => fave.id !== newFave.id);
-        setFaves([...duplicateRemover, newFave]);
+    if (!faves.some(fave => fave.id === newFave[0].id)) {
+      setFaves([...faves, newFave[0]]);
+    }
   };
 
   const removeFave = (id) => {
-    const filteredFaves = faves.filter(fave => fave.id !== id)
-    setFaves([...filteredFaves])
+    const filteredFaves = faves.filter(fave => fave.id !== id);
+    setFaves([...filteredFaves]);
   }
 
 
