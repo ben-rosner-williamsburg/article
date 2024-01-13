@@ -1,0 +1,26 @@
+.error-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: #f4f3ee;
+}
+
+.error-message-container {
+  width: 40vw;
+  text-align: center;
+  justify-content: center;
+}
+
+.error {
+  color: #6c0f16;
+  align-self: center;
+  font-size: 4em;
+}
+
+.error-btn-container {
+  width: 30vw;
+  height: 10vh;
+  margin-top: 3.8em;
+  justify-self: flex-start;
+}
