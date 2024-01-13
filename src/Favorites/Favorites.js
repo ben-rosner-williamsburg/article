@@ -13,8 +13,8 @@ function Favorites({faves}) {
   return (
     <main className='faves-page'>
       <Header/>
-      <div className='artwork-container'>
-      {faveImages.length ? faveImages : <h1 className='heading-text'>No images here!</h1>}
+      <div className='artwork-container text-container'>
+      {faveImages.length ? faveImages : <h1 className='no-img-text'>No images here!</h1>}
       </div>
     </main>
   )

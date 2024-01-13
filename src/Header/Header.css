@@ -31,8 +31,13 @@
 .favorite-link {
   font-size: 4.8em;
   text-decoration: none;
-  margin-right: 1.8vw;
 }
+
+.back-btn-container {
+  align-items: center;
+  width: 100%;
+}
+
 
 
 

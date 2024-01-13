@@ -21,7 +21,8 @@ function App() {
   }
 
   const addFave = (newFave) => {
-    setFaves([...faves, newFave])
+    let filteredFaves = faves.filter(fave => fave.id !== newFave.id)
+      setFaves([...filteredFaves, newFave])
   }
 
 
