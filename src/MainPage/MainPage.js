@@ -3,7 +3,7 @@ import Header from '../Header/Header'
 import { Link } from 'react-router-dom'
 import propTypes from 'prop-types'
 
-const MainPage = ({ artworks }) => {
+const MainPage = ({ artworks, error}) => {
   const artwork = artworks.filter((work) => work.primaryimageurl !== null 
   && work.peoplecount > 0)
   const artImage = artwork.map(work => {
@@ -19,9 +19,9 @@ const MainPage = ({ artworks }) => {
   return (
     <main className='main-page'>
       <Header />
-      <div className='artwork-container'>
+      {!error ? <div className='artwork-container'>
         {artImage}
-      </div>
+      </div> : <h1>500 Error! Try again later!</h1>}
     </main>
   )
 }
