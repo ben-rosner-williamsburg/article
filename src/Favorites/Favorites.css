@@ -6,3 +6,21 @@
 }
 
 
+.no-img-text{
+  text-align: center;
+  font-family: 'Salsa', cursive;
+  font-size: 1.8em;
+  color: #f4f3ee;
+  letter-spacing: .11em;
+  font-style: italic;
+  font-weight: bolder;
+  align-items: center;
+  margin-right: 6.2em;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}

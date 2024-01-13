@@ -10,9 +10,10 @@
   text-align: justify;
   border: none;
   color: #6c0f16;
-  margin: 0;
+  margin: 0 -1.8vw 0 0;
 }
 
 .back-link {
   text-decoration: none;
+  margin-left: 1.0em;
 }
