@@ -9,7 +9,7 @@ const Header = () => {
       {location.pathname === "/favorites" ? (<h1 className='heading-text'>Favorites</h1>) : (<h1 className='heading-text'>Article</h1>)}
       </main>
       <section className='favorites-link-container'>
-      {location.pathname === "/favorites" ? (<div className='back-btn-container'><Link className='back-link' to="/"><BackBtn className="back-text-red-header"/></Link></div>) :  
+      {location.pathname === "/favorites" ? (<div className='back-btn-container'><BackBtn className="back-text-red-header"/></div>) :  
       (<Link className='favorite-link' to="/favorites">🖼️</Link>)}
       </section>
     </div>

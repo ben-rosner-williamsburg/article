@@ -8,7 +8,7 @@ import Favorites from '../Favorites/Favorites'
 
 function App() {
   const [artworks, setArtworks] = useState([]);
-  const [faves, setFaves] = useState([])
+  const [faves, setFaves] = useState([]);
 
   useEffect(() => {
     fetchArtworks();
@@ -20,13 +20,11 @@ function App() {
     .catch(err => console.error(err.message))
   }
 
-  const checkForDuplicates = (newFave) => {
-    const duplicate = faves.find(fave => fave.id === newFave.id)
-    console.log(duplicate)
-  }
   const addFave = (newFave) => {
-     setFaves([...faves, newFave])
-  }
+    if (!faves.some((fave) => fave.id === newFave.id)) {
+      setFaves([...faves, newFave]);
+    }
+  };
 
   const removeFave = (id) => {
     const filteredFaves = faves.filter(fave => fave.id !== id)
