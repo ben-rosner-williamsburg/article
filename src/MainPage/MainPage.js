@@ -1,6 +1,7 @@
 import './MainPage.css'
 import Header from '../Header/Header'
 import { Link } from 'react-router-dom'
+import propTypes from 'prop-types'
 
 const MainPage = ({ artworks }) => {
   const artwork = artworks.filter((work) => work.primaryimageurl !== null 
@@ -24,5 +25,16 @@ const MainPage = ({ artworks }) => {
     </main>
   )
 }
+
+MainPage.propTypes = {
+  artworks: propTypes.arrayOf(
+    propTypes.shape({
+      id: propTypes.number.isRequired,
+      primaryimageurl: propTypes.string,
+      description: propTypes.string
+    })
+  ).isRequired,
+}
+
 
 export default MainPage;

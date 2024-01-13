@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { getArtwork } from "../apiCalls";
 import BackButton from '../BackButton/BackButton';
+import propTypes from 'prop-types';
 
 function Details({addFave}) {
   const [artwork, setArtwork] = useState([]);
@@ -28,7 +29,7 @@ function Details({addFave}) {
 
   const work = artwork.map(work => {
     return (
-      <div className='details'>
+      <div className='details' key={work.id}>
         <img className='artwork-element image' alt={work.description} src={work.primaryimageurl} />
         <h1 className='artwork-element title'> Title: {work.title}</h1>
         <h3 className="artwork-element artist-name">Artist: {work.people[0].name}</h3>
@@ -44,11 +45,16 @@ function Details({addFave}) {
         <section className="header-container">
           <h1 className='detail-heading-text'>Article</h1>
         </section>
-        <h1 className='heart-button' onClick={handleFave}>❤️</h1>
+        <h1 className='heart-button' onClick={() => handleFave()}>❤️</h1>
       </section>
       <h3 className="artwork-facts">{work}</h3>
     </section>
   )
 }
+
+Details.propTypes = {
+  addFave: propTypes.func.isRequired
+}
+
 
 export default Details;

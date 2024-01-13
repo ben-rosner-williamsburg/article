@@ -1,6 +1,6 @@
 .btn-container {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   width: 15vw;
   height: 10vh;
 }
@@ -15,5 +15,5 @@
 
 .back-link {
   text-decoration: none;
-  margin-left: 1.0em;
+  margin-left: 1.8em;
 }

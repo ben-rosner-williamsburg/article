@@ -8,7 +8,7 @@ import Favorites from '../Favorites/Favorites'
 
 function App() {
   const [artworks, setArtworks] = useState([]);
-  const [faves, setFaves] = useState([])
+  const [faves, setFaves] = useState([]);
 
   useEffect(() => {
     fetchArtworks();
@@ -21,17 +21,24 @@ function App() {
   }
 
   const addFave = (newFave) => {
-    let filteredFaves = faves.filter(fave => fave.id !== newFave.id)
-      setFaves([...filteredFaves, newFave])
+    if (!faves.some((fave) => fave.id === newFave.id)) {
+      setFaves([...faves, newFave]);
+    }
+  };
+
+  const removeFave = (id) => {
+    const filteredFaves = faves.filter(fave => fave.id !== id)
+    setFaves([...filteredFaves])
   }
+
 
 
   return (
     <main className="article-app">
       <Routes>
         <Route path="/" element={<MainPage artworks={artworks}/>} />
-        <Route path="/details/:id" element={<Details addFave={addFave}/>} />
-        <Route path="/favorites" element={<Favorites faves={faves}/>} />
+        <Route path="/details/:id" element={<Details addFave={addFave} />} />
+        <Route path="/favorites" element={<Favorites faves={faves} removeFave={removeFave}/>} />
       </Routes>
     </main>
   );
