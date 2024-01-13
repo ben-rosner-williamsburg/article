@@ -34,6 +34,7 @@ MainPage.propTypes = {
       description: propTypes.string
     })
   ).isRequired,
+  error: propTypes.string
 }
 
 
