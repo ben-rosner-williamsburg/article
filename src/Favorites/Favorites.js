@@ -3,6 +3,7 @@ import Header from '../Header/Header'
 import propTypes from 'prop-types'
 
 function Favorites({faves, removeFave}) {
+  console.log(faves)
   const faveImages = faves.map(faveWorks => faveWorks.map(work =>{
       return (
         <div className='img' key={work.id}>

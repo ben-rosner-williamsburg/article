@@ -23,9 +23,8 @@ function App() {
   }
 
   const addFave = (newFave) => {
-    if (!faves.some((fave) => fave.id === newFave.id)) {
-      setFaves([...faves, newFave]);
-    }
+        const duplicateRemover = faves.filter(fave => fave.id !== newFave.id);
+        setFaves([...duplicateRemover, newFave]);
   };
 
   const removeFave = (id) => {
