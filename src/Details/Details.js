@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { getArtwork } from "../apiCalls";
 import BackButton from '../BackButton/BackButton';
 
-function Details({addFave}) {
+function Details({addFave, checkForDuplicates}) {
   const [artwork, setArtwork] = useState([]);
   const params = useParams();
   const navigate = useNavigate()

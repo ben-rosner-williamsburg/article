@@ -20,18 +20,27 @@ function App() {
     .catch(err => console.error(err.message))
   }
 
-  const addFave = (newFave) => {
-    let filteredFaves = faves.filter(fave => fave.id !== newFave.id)
-      setFaves([...filteredFaves, newFave])
+  const checkForDuplicates = (newFave) => {
+    const duplicate = faves.find(fave => fave.id === newFave.id)
+    console.log(duplicate)
   }
+  const addFave = (newFave) => {
+     setFaves([...faves, newFave])
+  }
+
+  const removeFave = (id) => {
+    const filteredFaves = faves.filter(fave => fave.id !== id)
+    setFaves([...filteredFaves])
+  }
+
 
 
   return (
     <main className="article-app">
       <Routes>
         <Route path="/" element={<MainPage artworks={artworks}/>} />
-        <Route path="/details/:id" element={<Details addFave={addFave}/>} />
-        <Route path="/favorites" element={<Favorites faves={faves}/>} />
+        <Route path="/details/:id" element={<Details addFave={addFave} />} />
+        <Route path="/favorites" element={<Favorites faves={faves} removeFave={removeFave}/>} />
       </Routes>
     </main>
   );

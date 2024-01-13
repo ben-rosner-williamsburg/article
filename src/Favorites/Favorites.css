@@ -5,6 +5,13 @@
   background-color: #57886c;
 }
 
+.favorites-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
 
 .no-img-text{
   text-align: center;
@@ -18,9 +25,7 @@
   margin-right: 6.2em;
 }
 
-.text-container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
+.remove-fave {
+  cursor: pointer;
 }
+
