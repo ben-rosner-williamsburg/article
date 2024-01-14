@@ -28,7 +28,7 @@
   align-items: center;
   width: 10vw;
   height: 15vh;
-  margin: 2.8vw;
+  margin: 1.8vw;
 }
 
 .favorite-link {
@@ -44,7 +44,7 @@
   }
   .favorites-link-container {
     align-items: center;
-    margin: 6.8vw;
+    margin-top: 14.8vh;
   }
   .favorite-link {
     font-size: 6.8em;
