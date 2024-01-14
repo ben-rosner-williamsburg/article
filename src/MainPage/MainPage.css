@@ -7,10 +7,10 @@
 
 
 .artwork-container {
-  padding: 20px;
+  padding: 1.8em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 1.8em;
 }
 
 .img-work {
@@ -25,4 +25,72 @@
   background-color: white;
   cursor: pointer;
   opacity: .1;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .artwork-container {
+    padding: 1.0em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .artwork-container {
+    padding: 3.8em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-gap: 1.8em;
+  }
+
+  .img-work {
+    width: 20vw;
+    height: 25vh;
+    align-self: center;
+    box-shadow: .5em .5em .5em .5em black;
+  }
+}
+
+
+
+@media only screen and (max-width: 425px) {
+  .artwork-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-work {
+    width: 50vw;
+    height: 25vh;
+    align-self: center;
+    box-shadow: .5em .5em .5em .5em black;
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
+  .artwork-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-work {
+    width: 50vw;
+    height: 25vh;
+    align-self: center;
+    box-shadow: .5em .5em .5em .5em black;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .artwork-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-work {
+    width: 50vw;
+    height: 25vh;
+    align-self: center;
+    box-shadow: .5em .5em .5em .5em black;
+  }
 }
