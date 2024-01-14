@@ -24,3 +24,82 @@
   margin-top: 3.8em;
   justify-self: flex-start;
 }
+
+@media only screen and (max-width: 1024px) {
+  .error-btn-container {
+    margin-top: 0em;
+  }
+  .error-message-container{
+    align-items: center;
+    flex-direction: row;
+  }
+  .error {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .error-btn-container {
+    margin-top: 0em;
+  }
+  .error-message-container{
+    align-items: center;
+    flex-direction: row;
+  }
+  .error {
+    font-size: 2em;
+  }
+}
+
+
+@media only screen and (max-width: 425px) {
+  .error-btn-container {
+    margin-top: 0em;
+  }
+  .error-message-container{
+    align-items: center;
+    flex-direction: row;
+  }
+  .error {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .error-btn-container {
+    margin-top: 0em;
+  }
+  .error-message-container{
+    align-items: center;
+    flex-direction: row;
+  }
+  .error {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .error-btn-container {
+    margin-top: 0em;
+  }
+  .error-message-container{
+    align-items: center;
+    flex-direction: row;
+  }
+  .error {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .error-btn-container {
+    margin-top: 0em;
+  }
+  .error-message-container{
+    align-items: center;
+    flex-direction: row;
+  }
+  .error {
+    font-size: 2em;
+  }
+}

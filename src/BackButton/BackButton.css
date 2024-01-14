@@ -12,6 +12,7 @@
   align-self: center;
   border: none;
   color: #6c0f16;
+  margin-top: 0em;
 }
 
 .back-link {
@@ -28,7 +29,7 @@
 
 @media only screen and (max-width: 768px) {
   .back-text {
-    font-size: 4.2em;
+    font-size: 3.2em;
     margin-left: 1.4vw;
   }
 }
