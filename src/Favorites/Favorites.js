@@ -3,7 +3,6 @@ import Header from '../Header/Header'
 import propTypes from 'prop-types'
 
 function Favorites({faves, removeFave}) {
-  console.log(faves)
   const faveImages = faves.map(faveWork => {
       return (
         <div className='img' key={faveWork.id}>
@@ -25,13 +24,11 @@ function Favorites({faves, removeFave}) {
 
 Favorites.propTypes = {
   faves: propTypes.arrayOf(
-    propTypes.arrayOf(
       propTypes.shape({
       id: propTypes.number.isRequired,
       primaryimageurl: propTypes.string.isRequired,
       description: propTypes.string
     })
-    )
   ),
   removeFave: propTypes.func.isRequired
 }
