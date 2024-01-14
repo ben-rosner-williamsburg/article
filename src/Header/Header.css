@@ -1,7 +1,7 @@
 .header {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 100vw;
   background-color: #6c0f16;
   box-sizing: border-box;
   box-shadow: .5em .5em .5em .15em black;
@@ -9,30 +9,103 @@
 
 .heading-text-container {
   width: 100vw;
- text-align: center;
+  text-align: center;
 }
+
 .heading-text {
   font-family: 'Salsa', cursive;
-  font-size: 3.8em;
+  font-size: 9.8em;
   color: #f4f3ee;
   letter-spacing: .11em;
   font-style: italic;
   font-weight: bolder;
   align-items: center;
+  margin-left: 8.8vw;
 }
 
 .favorites-link-container {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   width: 10vw;
   height: 15vh;
+  margin: 2.8vw;
 }
 
 .favorite-link {
-  font-size: 4.8em;
+  font-size: 8.8em;
   text-decoration: none;
 }
 
 
+@media only screen and (max-width: 1440px) {
+  .heading-text{
+    font-size: 8.8em;
+    margin-left: 18vw;
+  }
+  .favorites-link-container {
+    align-items: center;
+    margin: 6.8vw;
+  }
+  .favorite-link {
+    font-size: 6.8em;
+  }
+}
 
 
+@media only screen and (max-width: 768px) {
+  .heading-text{
+    font-size: 3.4em;
+    margin-left: 8vw;
+  }
+  .favorites-link-container {
+    align-items: center;
+    margin: 2.8vw;
+  }
+  .favorite-link {
+    font-size: 2.8em;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .heading-text{
+    font-size: 2.4em;
+    margin-left: 8vw;
+  }
+  .favorites-link-container {
+    align-items: center;
+    margin: 1vw;
+  }
+  .favorite-link {
+    font-size: 1.8em;
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
+  .heading-text{
+    font-size: 2.4em;
+    margin-left: 8vw;
+  }
+  .favorites-link-container {
+    align-items: center;
+    margin: 1vw;
+  }
+  .favorite-link {
+    font-size: 1.8em;
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
+  .heading-text{
+    font-size: 2.4em;
+    margin-left: 8vw;
+  }
+  .favorites-link-container {
+    align-items: center;
+    margin: 1vw;
+  }
+  .favorite-link {
+    font-size: 1.8em;
+  }
+}
