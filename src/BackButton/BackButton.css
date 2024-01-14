@@ -18,6 +18,13 @@
   text-decoration: none;
 }
 
+@media only screen and (max-width: 1024px) {
+  .back-text {
+    font-size: 4.2em;
+    margin: 2.8vh 1.4vw;
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
   .back-text {

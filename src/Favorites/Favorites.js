@@ -5,19 +5,19 @@ import propTypes from 'prop-types'
 function Favorites({faves, removeFave}) {
   const faveImages = faves.map(faveWork => {
       return (
-        <div className='img' key={faveWork.id}>
+        <div className='img-container' key={faveWork.id}>
         <img src={faveWork.primaryimageurl}
           alt={faveWork.description}
-          className='img-work'
+          className='img-work-favorite'
         />
-        <h1 className='remove-fave' onClick={() => {removeFave(faveWork.id)}}>❌</h1>
+        <div className='remove-fave-container'><h1 className='remove-fave' onClick={() => {removeFave(faveWork.id)}}>❌</h1></div>
         </div>
       )}
   )
   return (
     <main className='faves-page'>
       <Header/>
-      {faveImages.length ? <div className='favorites-container'>{faveImages} </div> : <div className='text=container'>{<h1 className='no-img-text'>No images here!</h1>}</div>}
+      {faveImages.length ? <div className='favorites-container'>{faveImages} </div> : <div className='text-container'>{<h1 className='no-img-text'>No images here!</h1>}</div>}
     </main>
   )
 }
