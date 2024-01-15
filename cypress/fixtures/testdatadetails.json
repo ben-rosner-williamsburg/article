@@ -1,0 +1,177 @@
+{
+  "info": {
+    "totalrecordsperquery": 10,
+    "totalrecords": 1,
+    "pages": 1,
+    "page": 1,
+    "responsetime": "4 ms"
+  },
+  "records": [
+    {
+      "copyright": null,
+      "contextualtextcount": 0,
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift in gratitude to John Coolidge, Gift of Leslie Cheek, Jr., Anonymous Fund in memory of Henry Berg, Louise Haskell Daly, Alpheus Hyatt, Richard Norton Memorial Funds and through the generosity of Albert H. Gordon and Emily Rauh Pulitzer; formerly in the collection of Stuart Cary Welch, Jr.",
+      "accesslevel": 1,
+      "dateoflastpageview": "2024-01-11",
+      "classificationid": 26,
+      "division": "Asian and Mediterranean Art",
+      "markscount": 0,
+      "publicationcount": 0,
+      "totaluniquepageviews": 922,
+      "contact": "am_asianmediterranean@harvard.edu",
+      "colorcount": 8,
+      "rank": 377,
+      "id": 1428,
+      "state": null,
+      "verificationleveldescription": "Unchecked. Object information has not been verified for completeness and has not been vetted",
+      "period": null,
+      "images": [
+        {
+          "date": "2003-02-19",
+          "copyright": "President and Fellows of Harvard College",
+          "imageid": 120762,
+          "idsid": 43534078,
+          "format": "image/jpeg",
+          "description": null,
+          "technique": null,
+          "renditionnumber": "ISL10069",
+          "displayorder": 1,
+          "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:ISL10069_dynmc",
+          "alttext": null,
+          "width": 1024,
+          "publiccaption": null,
+          "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/43534078",
+          "height": 767
+        }
+      ],
+      "worktypes": [
+        {
+          "worktypeid": "210",
+          "worktype": "manuscript"
+        }
+      ],
+      "imagecount": 1,
+      "totalpageviews": 1111,
+      "accessionyear": 1995,
+      "standardreferencenumber": null,
+      "signed": null,
+      "classification": "Paintings",
+      "relatedcount": 0,
+      "verificationlevel": 0,
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:ISL10069_dynmc",
+      "titlescount": 1,
+      "peoplecount": 1,
+      "style": null,
+      "lastupdate": "2024-01-12T05:02:38-0500",
+      "commentary": null,
+      "periodid": null,
+      "technique": null,
+      "edition": null,
+      "description": null,
+      "medium": "Opaque watercolor on paper",
+      "lendingpermissionlevel": 0,
+      "title": "Battle Scene, folio fragment from an album of the Bhagavata Purana (Ancient Stories of the Lord)a Bhagavat Purana series",
+      "accessionmethod": "Purchase",
+      "colors": [
+        {
+          "color": "#c84b4b",
+          "spectrum": "#dd5872",
+          "hue": "Red",
+          "percent": 0.3444047619047619,
+          "css3": "#cd5c5c"
+        },
+        {
+          "color": "#c89664",
+          "spectrum": "#ed7758",
+          "hue": "Brown",
+          "percent": 0.26375,
+          "css3": "#bdb76b"
+        },
+        {
+          "color": "#4b644b",
+          "spectrum": "#3db657",
+          "hue": "Green",
+          "percent": 0.17327380952380952,
+          "css3": "#556b2f"
+        },
+        {
+          "color": "#c8af7d",
+          "spectrum": "#e9715f",
+          "hue": "Brown",
+          "percent": 0.09273809523809524,
+          "css3": "#d2b48c"
+        },
+        {
+          "color": "#e1c8af",
+          "spectrum": "#e9715f",
+          "hue": "Orange",
+          "percent": 0.05529761904761905,
+          "css3": "#f5deb3"
+        },
+        {
+          "color": "#e1e1c8",
+          "spectrum": "#e9715f",
+          "hue": "Green",
+          "percent": 0.03720238095238095,
+          "css3": "#dcdcdc"
+        },
+        {
+          "color": "#323232",
+          "spectrum": "#2eb45d",
+          "hue": "Grey",
+          "percent": 0.033095238095238094,
+          "css3": "#2f4f4f"
+        },
+        {
+          "color": "#321919",
+          "spectrum": "#3db657",
+          "hue": "Brown",
+          "percent": 0.0002380952380952381,
+          "css3": "#000000"
+        }
+      ],
+      "provenance": null,
+      "groupcount": 1,
+      "dated": "c.1540",
+      "department": "Department of Islamic & Later Indian Art",
+      "dateend": 1545,
+      "people": [
+        {
+          "role": "Artist",
+          "birthplace": null,
+          "gender": "unknown",
+          "displaydate": null,
+          "prefix": null,
+          "culture": null,
+          "displayname": "Unknown Artist",
+          "alphasort": "Unknown Artist",
+          "name": "Unknown Artist",
+          "personid": 23184,
+          "deathplace": null,
+          "displayorder": 1
+        }
+      ],
+      "url": "https://www.harvardartmuseums.org/collections/object/1428",
+      "dateoffirstpageview": "2009-05-16",
+      "century": "16th century",
+      "objectnumber": "1995.66",
+      "labeltext": null,
+      "datebegin": 1535,
+      "culture": "Indian",
+      "exhibitioncount": 4,
+      "imagepermissionlevel": 0,
+      "mediacount": 0,
+      "objectid": 1428,
+      "techniqueid": null,
+      "dimensions": "17.9 x 24 cm (7 1/16 x 9 7/16 in.)",
+      "seeAlso": [
+        {
+          "id": "https://iiif.harvardartmuseums.org/manifests/object/1428",
+          "type": "IIIF Manifest",
+          "format": "application/json",
+          "profile": "http://iiif.io/api/presentation/2/context.json"
+        }
+      ]
+    }
+  ]
+}
