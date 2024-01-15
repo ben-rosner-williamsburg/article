@@ -4,6 +4,7 @@
 #api keys
 .env
 .cypress.env.json
+.env.staging
 
 # dependencies
 /node_modules
