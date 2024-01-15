@@ -1,0 +1,476 @@
+{
+  "info": {
+    "totalrecordsperquery": 21,
+    "totalrecords": 5582,
+    "pages": 266,
+    "page": 1,
+    "next": "https://api.harvardartmuseums.org/object?apikey=54e6756b-aacd-48d5-bea2-3b67eb2f685a&hasimage=1&classification=Paintings&size=21&sort=&page=2",
+    "responsetime": "14 ms"
+  },
+  "records": [
+    {
+      "copyright": null,
+      "contextualtextcount": 0,
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Gift in gratitude to John Coolidge, Gift of Leslie Cheek, Jr., Anonymous Fund in memory of Henry Berg, Louise Haskell Daly, Alpheus Hyatt, Richard Norton Memorial Funds and through the generosity of Albert H. Gordon and Emily Rauh Pulitzer; formerly in the collection of Stuart Cary Welch, Jr.",
+      "accesslevel": 1,
+      "dateoflastpageview": "2024-01-11",
+      "classificationid": 26,
+      "division": "Asian and Mediterranean Art",
+      "markscount": 0,
+      "publicationcount": 0,
+      "totaluniquepageviews": 922,
+      "contact": "am_asianmediterranean@harvard.edu",
+      "colorcount": 8,
+      "rank": 377,
+      "id": 1428,
+      "state": null,
+      "verificationleveldescription": "Unchecked. Object information has not been verified for completeness and has not been vetted",
+      "period": null,
+      "images": [
+        {
+          "date": "2003-02-19",
+          "copyright": "President and Fellows of Harvard College",
+          "imageid": 120762,
+          "idsid": 43534078,
+          "format": "image/jpeg",
+          "description": null,
+          "technique": null,
+          "renditionnumber": "ISL10069",
+          "displayorder": 1,
+          "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:ISL10069_dynmc",
+          "alttext": null,
+          "width": 1024,
+          "publiccaption": null,
+          "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/43534078",
+          "height": 767
+        }
+      ],
+      "worktypes": [
+        {
+          "worktypeid": "210",
+          "worktype": "manuscript"
+        }
+      ],
+      "imagecount": 1,
+      "totalpageviews": 1111,
+      "accessionyear": 1995,
+      "standardreferencenumber": null,
+      "signed": null,
+      "classification": "Paintings",
+      "relatedcount": 0,
+      "verificationlevel": 0,
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:ISL10069_dynmc",
+      "titlescount": 1,
+      "peoplecount": 1,
+      "style": null,
+      "lastupdate": "2024-01-12T05:02:38-0500",
+      "commentary": null,
+      "periodid": null,
+      "technique": null,
+      "edition": null,
+      "description": null,
+      "medium": "Opaque watercolor on paper",
+      "lendingpermissionlevel": 0,
+      "title": "Battle Scene, folio fragment from an album of the Bhagavata Purana (Ancient Stories of the Lord)a Bhagavat Purana series",
+      "accessionmethod": "Purchase",
+      "colors": [
+        {
+          "color": "#c84b4b",
+          "spectrum": "#dd5872",
+          "hue": "Red",
+          "percent": 0.3444047619047619,
+          "css3": "#cd5c5c"
+        },
+        {
+          "color": "#c89664",
+          "spectrum": "#ed7758",
+          "hue": "Brown",
+          "percent": 0.26375,
+          "css3": "#bdb76b"
+        },
+        {
+          "color": "#4b644b",
+          "spectrum": "#3db657",
+          "hue": "Green",
+          "percent": 0.17327380952380952,
+          "css3": "#556b2f"
+        },
+        {
+          "color": "#c8af7d",
+          "spectrum": "#e9715f",
+          "hue": "Brown",
+          "percent": 0.09273809523809524,
+          "css3": "#d2b48c"
+        },
+        {
+          "color": "#e1c8af",
+          "spectrum": "#e9715f",
+          "hue": "Orange",
+          "percent": 0.05529761904761905,
+          "css3": "#f5deb3"
+        },
+        {
+          "color": "#e1e1c8",
+          "spectrum": "#e9715f",
+          "hue": "Green",
+          "percent": 0.03720238095238095,
+          "css3": "#dcdcdc"
+        },
+        {
+          "color": "#323232",
+          "spectrum": "#2eb45d",
+          "hue": "Grey",
+          "percent": 0.033095238095238094,
+          "css3": "#2f4f4f"
+        },
+        {
+          "color": "#321919",
+          "spectrum": "#3db657",
+          "hue": "Brown",
+          "percent": 0.0002380952380952381,
+          "css3": "#000000"
+        }
+      ],
+      "provenance": null,
+      "groupcount": 1,
+      "dated": "c.1540",
+      "department": "Department of Islamic & Later Indian Art",
+      "dateend": 1545,
+      "people": [
+        {
+          "role": "Artist",
+          "birthplace": null,
+          "gender": "unknown",
+          "displaydate": null,
+          "prefix": null,
+          "culture": null,
+          "displayname": "Unknown Artist",
+          "alphasort": "Unknown Artist",
+          "name": "Unknown Artist",
+          "personid": 23184,
+          "deathplace": null,
+          "displayorder": 1
+        }
+      ],
+      "url": "https://www.harvardartmuseums.org/collections/object/1428",
+      "dateoffirstpageview": "2009-05-16",
+      "century": "16th century",
+      "objectnumber": "1995.66",
+      "labeltext": null,
+      "datebegin": 1535,
+      "culture": "Indian",
+      "exhibitioncount": 4,
+      "imagepermissionlevel": 0,
+      "mediacount": 0,
+      "objectid": 1428,
+      "techniqueid": null,
+      "dimensions": "17.9 x 24 cm (7 1/16 x 9 7/16 in.)",
+      "seeAlso": [
+        {
+          "id": "https://iiif.harvardartmuseums.org/manifests/object/1428",
+          "type": "IIIF Manifest",
+          "format": "application/json",
+          "profile": "http://iiif.io/api/presentation/2/context.json"
+        }
+      ]
+    },
+    {
+      "copyright": "© 1989 Lee Chun-yi",
+      "contextualtextcount": 0,
+      "creditline": "Harvard Art Museums/Arthur M. Sackler Museum, Purchase in honor of Professor Chu-tsing Li through the generosity of an anonymous donor and of the Ralph C. Marcove International Understanding Through Arts and Crafts Foundation",
+      "accesslevel": 1,
+      "dateoflastpageview": "2024-01-11",
+      "classificationid": 26,
+      "division": "Asian and Mediterranean Art",
+      "markscount": 0,
+      "publicationcount": 2,
+      "totaluniquepageviews": 217,
+      "contact": "am_asianmediterranean@harvard.edu",
+      "colorcount": 7,
+      "rank": 125827,
+      "id": 1429,
+      "state": null,
+      "verificationleveldescription": "Good. Object is well described and information is vetted",
+      "period": null,
+      "images": [
+        {
+          "date": null,
+          "copyright": null,
+          "imageid": 207486,
+          "idsid": 18483191,
+          "format": "image/jpeg",
+          "description": null,
+          "technique": null,
+          "renditionnumber": "79762",
+          "displayorder": 1,
+          "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:79762_dynmc",
+          "alttext": null,
+          "width": 1024,
+          "publiccaption": "Painting, section 1",
+          "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/18483191",
+          "height": 298
+        },
+        {
+          "date": null,
+          "copyright": null,
+          "imageid": 207485,
+          "idsid": 18483190,
+          "format": "image/jpeg",
+          "description": null,
+          "technique": null,
+          "renditionnumber": "79761",
+          "displayorder": 2,
+          "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:79761_dynmc",
+          "alttext": null,
+          "width": 1024,
+          "publiccaption": "Title",
+          "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/18483190",
+          "height": 325
+        },
+        {
+          "date": null,
+          "copyright": null,
+          "imageid": 207487,
+          "idsid": 18483192,
+          "format": "image/jpeg",
+          "description": null,
+          "technique": null,
+          "renditionnumber": "79763",
+          "displayorder": 3,
+          "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:79763_dynmc",
+          "alttext": null,
+          "width": 1024,
+          "publiccaption": "Painting, section 2",
+          "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/18483192",
+          "height": 299
+        },
+        {
+          "date": null,
+          "copyright": null,
+          "imageid": 207488,
+          "idsid": 18483193,
+          "format": "image/jpeg",
+          "description": null,
+          "technique": null,
+          "renditionnumber": "79764",
+          "displayorder": 4,
+          "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:79764_dynmc",
+          "alttext": null,
+          "width": 1024,
+          "publiccaption": "Painting, section 3",
+          "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/18483193",
+          "height": 300
+        },
+        {
+          "date": null,
+          "copyright": null,
+          "imageid": 207489,
+          "idsid": 18483194,
+          "format": "image/jpeg",
+          "description": null,
+          "technique": null,
+          "renditionnumber": "79765",
+          "displayorder": 5,
+          "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:79765_dynmc",
+          "alttext": null,
+          "width": 1024,
+          "publiccaption": "Painting, section 4",
+          "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/18483194",
+          "height": 300
+        },
+        {
+          "date": null,
+          "copyright": null,
+          "imageid": 207490,
+          "idsid": 18483195,
+          "format": "image/jpeg",
+          "description": null,
+          "technique": null,
+          "renditionnumber": "79766",
+          "displayorder": 6,
+          "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:79766_dynmc",
+          "alttext": null,
+          "width": 1024,
+          "publiccaption": "Painting, section 5",
+          "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/18483195",
+          "height": 299
+        },
+        {
+          "date": null,
+          "copyright": null,
+          "imageid": 207491,
+          "idsid": 18483196,
+          "format": "image/jpeg",
+          "description": null,
+          "technique": null,
+          "renditionnumber": "79767",
+          "displayorder": 7,
+          "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:79767_dynmc",
+          "alttext": null,
+          "width": 1024,
+          "publiccaption": "Colophon by Liu Guosong (b. 1932)",
+          "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/18483196",
+          "height": 388
+        },
+        {
+          "date": null,
+          "copyright": null,
+          "imageid": 207492,
+          "idsid": 18483197,
+          "format": "image/jpeg",
+          "description": null,
+          "technique": null,
+          "renditionnumber": "79768",
+          "displayorder": 8,
+          "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:79768_dynmc",
+          "alttext": null,
+          "width": 955,
+          "publiccaption": "Detail of colophon writer's seal",
+          "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/18483197",
+          "height": 1024
+        },
+        {
+          "date": "2006-05-30",
+          "copyright": "President and Fellows of Harvard College",
+          "imageid": 186013,
+          "idsid": 18737528,
+          "format": "image/jpeg",
+          "description": null,
+          "technique": null,
+          "renditionnumber": "DDC000117",
+          "displayorder": 9,
+          "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:DDC000117_dynmc",
+          "alttext": null,
+          "width": 1024,
+          "publiccaption": "Overall Image of Painting with Title",
+          "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/18737528",
+          "height": 59
+        }
+      ],
+      "worktypes": [
+        {
+          "worktypeid": "170",
+          "worktype": "handscroll"
+        },
+        {
+          "worktypeid": "248",
+          "worktype": "painting"
+        }
+      ],
+      "imagecount": 9,
+      "totalpageviews": 313,
+      "accessionyear": 2006,
+      "standardreferencenumber": null,
+      "signed": null,
+      "classification": "Paintings",
+      "relatedcount": 0,
+      "verificationlevel": 3,
+      "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:79762_dynmc",
+      "titlescount": 2,
+      "peoplecount": 1,
+      "style": null,
+      "lastupdate": "2024-01-12T05:02:38-0500",
+      "commentary": null,
+      "periodid": null,
+      "technique": null,
+      "edition": null,
+      "description": "This handscroll depicts a range of tree-covered mountains shrouded in mist. A title written by the artist precedes the painting; the title is a line from a 1936 poem by Mao Zedong and reads \"Jiangshan ruci dou jiao\". It can be translated as \"What a Glorious Land!\", though it is also translated as \"This land, so rich in beauty.\"",
+      "medium": "Handscroll; ink on paper; with signature in clerical script (lishu) reading \"Li Junyi ling wu\" (Li Junyi '05); with colophon by Liu Guosong (b. 1932) dated 2006",
+      "lendingpermissionlevel": 0,
+      "title": "What a Glorious Land!",
+      "accessionmethod": "Purchase",
+      "colors": [
+        {
+          "color": "#7d7d7d",
+          "spectrum": "#8362aa",
+          "hue": "Grey",
+          "percent": 0.2514728682170543,
+          "css3": "#808080"
+        },
+        {
+          "color": "#c8c8c8",
+          "spectrum": "#8c5fa8",
+          "hue": "Grey",
+          "percent": 0.1827906976744186,
+          "css3": "#c0c0c0"
+        },
+        {
+          "color": "#646464",
+          "spectrum": "#7866ad",
+          "hue": "Grey",
+          "percent": 0.17844961240310078,
+          "css3": "#696969"
+        },
+        {
+          "color": "#afafaf",
+          "spectrum": "#8c5fa8",
+          "hue": "Grey",
+          "percent": 0.17162790697674418,
+          "css3": "#a9a9a9"
+        },
+        {
+          "color": "#969696",
+          "spectrum": "#8761aa",
+          "hue": "Grey",
+          "percent": 0.16387596899224807,
+          "css3": "#a9a9a9"
+        },
+        {
+          "color": "#4b4b4b",
+          "spectrum": "#3db657",
+          "hue": "Grey",
+          "percent": 0.026976744186046512,
+          "css3": "#2f4f4f"
+        },
+        {
+          "color": "#e1e1e1",
+          "spectrum": "#955ba5",
+          "hue": "Grey",
+          "percent": 0.024806201550387597,
+          "css3": "#dcdcdc"
+        }
+      ],
+      "provenance": "Chun-yi Lee, Tempe, AZ (2005-2006), sold; to Harvard University Art Museums, 2006.",
+      "groupcount": 0,
+      "dated": "2005",
+      "department": "Department of Asian Art",
+      "dateend": 2005,
+      "people": [
+        {
+          "role": "Artist",
+          "birthplace": "Gaoxiong (Kao-hsiung), Taiwan",
+          "gender": "male",
+          "displaydate": "born 1965",
+          "prefix": null,
+          "culture": "Chinese",
+          "displayname": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "alphasort": "Lee, Chun-Yi",
+          "name": "Lee Chun-Yi (Li Junyi) 李君毅",
+          "personid": 26523,
+          "deathplace": null,
+          "displayorder": 1
+        }
+      ],
+      "url": "https://www.harvardartmuseums.org/collections/object/1429",
+      "dateoffirstpageview": "2009-06-29",
+      "century": "21st century",
+      "objectnumber": "2006.13",
+      "labeltext": null,
+      "datebegin": 2005,
+      "culture": "Chinese",
+      "exhibitioncount": 2,
+      "imagepermissionlevel": 0,
+      "mediacount": 0,
+      "objectid": 1429,
+      "techniqueid": null,
+      "dimensions": "entire painting, including title: H. 17 x W. 300 cm (6 11/16 x 118 1/8 in.)\r\nmounting: H. 17.78 cm (7 in.)",
+      "seeAlso": [
+        {
+          "id": "https://iiif.harvardartmuseums.org/manifests/object/1429",
+          "type": "IIIF Manifest",
+          "format": "application/json",
+          "profile": "http://iiif.io/api/presentation/2/context.json"
+        }
+      ]
+    }
+  ]}

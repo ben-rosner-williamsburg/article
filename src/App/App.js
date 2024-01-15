@@ -13,14 +13,15 @@ function App() {
   const [error, setError] = useState("")
 
   useEffect(() => {
-    fetchArtworks();
+    getArtworks()
+    .then((artworkData) => {
+      setArtworks(artworkData.records)
+    }) 
+    .catch((err) =>  {
+      setError(err.message)
+    })
   }, [])
 
-  const fetchArtworks = () => {
-    getArtworks()
-    .then(artworkData => setArtworks(artworkData.records))
-    .catch(err => setError(err.message))
-  }
 
   const addFave = (newFave) => {
     if (!faves.some(fave => fave.id === newFave[0].id)) {

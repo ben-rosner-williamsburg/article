@@ -21,7 +21,7 @@ const MainPage = ({ artworks, error}) => {
       <Header />
       {!error ? <div className='artwork-container'>
         {artImage}
-      </div> : <h1>500 Error! Try again later!</h1>}
+      </div> : <h1 className="error-message">500 Error! Try again later!</h1>}
     </main>
   )
 }
