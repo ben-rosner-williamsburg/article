@@ -3,7 +3,7 @@
 
 #api keys
 .env
-.cypress.env.json
+cypress.env.json
 
 # dependencies
 /node_modules
