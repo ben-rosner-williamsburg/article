@@ -3,7 +3,7 @@
 
 #api keys
 .env
-.cypress.env.json
+cypress.env.json
 .env.staging
 
 # dependencies
@@ -27,3 +27,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.vercel
