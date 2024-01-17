@@ -5,12 +5,15 @@ const Header = () => {
   let location = useLocation();
   return (
     <div className='header'>
+     <section className='back-link-container'>
+      {location.pathname === "/favorites" ? (<BackBtn className="back-text-red-header"/>) : <></>}
+      </section>
       <main className='heading-text-container'>
       {location.pathname === "/favorites" ? (<h1 className='heading-text'>Favorites</h1>) : (<h1 className='heading-text'>Article</h1>)}
       </main>
       <section className='favorites-link-container'>
-      {location.pathname === "/favorites" ? (<div className='back-btn-container'><BackBtn className="back-text-red-header"/></div>) :  
-      (<Link className='favorite-link' to="/favorites">🖼️</Link>)}
+      {location.pathname === "/" ? (<Link className='favorite-link' to="/favorites">Favorites</Link>) : <></>}  
+
       </section>
     </div>
   )

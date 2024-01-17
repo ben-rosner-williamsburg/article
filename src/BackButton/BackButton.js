@@ -5,7 +5,7 @@ function BackBtn() {
   return (
     <div className='btn-container'>
       <Link className='back-link' to="/">
-        <p className='back-text'>🔙</p>
+        <p className='back-text'>Back</p>
       </Link>
     </div>
   )
