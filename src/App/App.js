@@ -10,7 +10,7 @@ import Error from '../Error/Error'
 function App() {
   const [artworks, setArtworks] = useState([]);
   const [faves, setFaves] = useState([]);
-  const [error, setError] = useState("")
+  const [error, setError] = useState("");
 
   useEffect(() => {
     getArtworks()

@@ -41,11 +41,11 @@ function Details({addFave}) {
   return (
     <section className="details-page" id={params.id}>
       <section className='elements-container'>
-      <BackButton className="back-button" />
+      <BackButton className="back-button"/>
         <section className="header-container">
           <h1 className='detail-heading-text'>Article</h1>
         </section>
-        <h1 className='heart-button' onClick={handleFave}>❤️</h1>
+        <h1 className='favorite-text' onClick={handleFave}>Favorite</h1>
       </section>
       <h3 className="artwork-facts">{work}</h3>
     </section>
