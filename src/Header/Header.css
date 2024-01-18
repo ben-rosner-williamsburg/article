@@ -58,88 +58,104 @@
 
 @media only screen and (max-width: 1440px) {
   .heading-text{
-    font-size: 6.8em;
-    margin-left: 18vw;
+    font-size: 3.8em;
+  }
+  .heading-text-container {
+    align-items: center;
+    width: 82vw;
   }
   .favorites-link-container {
-    align-items: center;
-
+    margin-left: -1.3vw;
   }
   .favorite-link {
-    font-size: 6.8em;
+    font-size: 2.2em;
   }
 }
 
 
 @media only screen and (max-width: 1024px) {
   .heading-text{
-    font-size: 4.8em;
-    margin-left: 18vw;
+    font-size: 3.8em;
+  }
+  .heading-text-container {
+    align-items: center;
+    width: 82vw;
   }
   .favorites-link-container {
-    align-items: center;
-
+    margin-left: -1.3vw;
   }
   .favorite-link {
-    font-size: 6.8em;
+    font-size: 2.2em;
   }
 }
 
 
 @media only screen and (max-width: 768px) {
   .heading-text{
-    font-size: 3.4em;
-    margin-left: 8vw;
+    font-size: 3.8em;
+  }
+  .heading-text-container {
+    align-items: center;
+    width: 85vw;
   }
   .favorites-link-container {
-    align-items: center;
-    margin: 2.8vw;
+    margin-left: -0.3vw;
+    margin-top: 1.4vh;
   }
   .favorite-link {
-    font-size: 2.8em;
+    font-size: 1.4em;
   }
 }
 
 @media only screen and (max-width: 425px) {
   .heading-text{
-    font-size: 2.4em;
-    margin-left: 8vw;
+    font-size: 2.8em;
+  }
+  .heading-text-container {
+    align-items: center;
+    width: 85vw;
   }
   .favorites-link-container {
-    align-items: center;
-    margin: 1vw;
+    margin-left: -0.3vw;
+    margin-top: 1.4vh;
   }
   .favorite-link {
-    font-size: 1.8em;
+    font-size: 1.2em;
   }
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
   .heading-text{
     font-size: 2.4em;
-    margin-left: 8vw;
+  }
+  .heading-text-container {
+    align-items: center;
+    width: 85vw;
   }
   .favorites-link-container {
-    align-items: center;
-    margin: 1vw;
+    margin-left: -0.3vw;
+    margin-top: 1.4vh;
   }
   .favorite-link {
-    font-size: 1.8em;
+    font-size: 1.0em;
   }
 }
 
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 425px) {
   .heading-text{
     font-size: 2.4em;
-    margin-left: 8vw;
+  }
+  .heading-text-container {
+    align-items: center;
+    width: 85vw;
   }
   .favorites-link-container {
-    align-items: center;
-    margin: 1vw;
+    margin-left: -0.3vw;
+    margin-top: 1.4vh;
   }
   .favorite-link {
-    font-size: 1.8em;
+    font-size: 0.9em;
   }
 }
