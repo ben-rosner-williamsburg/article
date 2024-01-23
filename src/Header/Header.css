@@ -62,7 +62,7 @@
   }
   .heading-text-container {
     align-items: center;
-    width: 82vw;
+    width: 100vw;
   }
   .favorite-link {
     font-size: 2.2em;
@@ -76,10 +76,10 @@
   }
   .heading-text-container {
     align-items: center;
-    width: 82vw;
+    width: 100vw;
   }
   .favorite-link {
-    font-size: 2.2em;
+    font-size: 1.8em;
   }
 }
 
@@ -90,14 +90,14 @@
   }
   .heading-text-container {
     align-items: center;
-    width: 85vw;
+    width: 100vw;
   }
   .favorites-link-container {
     margin-left: -0.3vw;
     margin-top: 1.4vh;
   }
   .favorite-link {
-    font-size: 1.4em;
+    font-size: 0.8em;
   }
 }
 
@@ -107,14 +107,14 @@
   }
   .heading-text-container {
     align-items: center;
-    width: 85vw;
+    width: 100vw;
   }
   .favorites-link-container {
     margin-left: -0.3vw;
     margin-top: 1.4vh;
   }
   .favorite-link {
-    font-size: 1.2em;
+    font-size: 0.8em;
   }
 }
 
@@ -125,14 +125,14 @@
   }
   .heading-text-container {
     align-items: center;
-    width: 85vw;
+    width: 100vw;
   }
   .favorites-link-container {
     margin-left: -0.3vw;
     margin-top: 1.4vh;
   }
   .favorite-link {
-    font-size: 1.0em;
+    font-size: 0.8em;
   }
 }
 
@@ -143,13 +143,13 @@
   }
   .heading-text-container {
     align-items: center;
-    width: 85vw;
+    width: 100vw;
   }
   .favorites-link-container {
     margin-left: -0.3vw;
     margin-top: 1.4vh;
   }
   .favorite-link {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 }
