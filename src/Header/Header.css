@@ -76,6 +76,7 @@
   }
   .heading-text-container {
     justify-content: space-around;
+    margin-left: 25%;
     width: 100vw;
   }
   .favorite-link {
