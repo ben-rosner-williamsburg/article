@@ -10,7 +10,6 @@
   text-align: center;
 }
 
-
 .elements-container {
   display: flex;
   flex-direction: row;
@@ -64,16 +63,16 @@
 }
 
 .favorite-text {
-    font-size: 2.2em;
-    align-self: center;
-    border: none;
-    color: #57886c;
-    margin-top: 0em;
-    font-family: Salsa;
-    cursor: pointer;
-    margin-right: 1vw;
+  font-size: 2.2em;
+  align-self: center;
+  border: none;
+  color: #57886c;
+  font-family: 'Salsa', cursive;
+  cursor: pointer;
+  margin-right: 1vw;
 }
 
+/* Media Queries */
 @media only screen and (max-width: 1440px) {
   .image {
     width: 20vw;
@@ -81,39 +80,21 @@
   }
   .detail-heading-text {
     font-size: 3.8em;
-    margin-left: 0vw;
   }
   .favorite-text {
     font-size: 2.2em;
-    margin-left: -2.4vw;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .image {
-    width: 20vw;
-    height: 30vh;
-  }
   .detail-heading-text {
     font-size: 2.8em;
-    margin-left: 0vw;
-  }
-  .heart-button {
-    font-size: 3.8em;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .image {
-    width: 20vw;
-    height: 30vh;
-  }
   .detail-heading-text {
     font-size: 2.8em;
-    margin-left: 0vw;
-  }
-  .heart-button {
-    font-size: 3.8em;
   }
 }
 
@@ -124,35 +105,19 @@
   }
   .detail-heading-text {
     font-size: 2.8em;
-    margin-left: 0vw;
   }
   .heart-button {
     font-size: 1.8em;
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 375px){
   .image {
     width: 40vw;
     height: 30vh;
   }
   .detail-heading-text {
     font-size: 1.8em;
-    margin-left: 0vw;
-  }
-  .heart-button {
-    font-size: 1.8em;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .image {
-    width: 40vw;
-    height: 30vh;
-  }
-  .detail-heading-text {
-    font-size: 1.8em;
-    margin-left: 0vw;
   }
   .heart-button {
     font-size: 1.8em;
