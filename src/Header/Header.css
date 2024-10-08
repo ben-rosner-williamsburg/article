@@ -9,30 +9,34 @@
 
 .heading-text-container {
   display: flex;
-  width: 100vw;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  width: 100vw;
 }
 
 .heading-text {
   font-family: 'Salsa', cursive;
-  font-size: 3.8em;
+  font-size: 2.5em;
+  letter-spacing: 0.11em;
   color: #f4f3ee;
-  letter-spacing: .11em;
   font-style: italic;
   font-weight: bolder;
-  align-items: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.header .back-link{
+.header .back-link,
+.header .favorite-link {
   color: #f4f3ee;
+}
+
+.header .back-link {
   margin-left: 1vw;
   margin-top: 3vh;
 }
 
-.header .favorite-link{
-  color: #f4f3ee;
+.header .favorite-link {
   margin-right: 1vw;
 }
 
@@ -48,51 +52,34 @@
   font-size: 2.2em;
   align-self: center;
   border: none;
-  margin-top: 0em;
-  font-family: Salsa;
+  font-family: 'Salsa';
   font-weight: bolder;
   cursor: pointer;
   text-decoration: none;
 }
 
-
 @media only screen and (max-width: 1440px) {
-  .heading-text{
+  .heading-text {
     font-size: 3.8em;
-  }
-  .heading-text-container {
-    justify-content: space-around;
-    width: 100vw;
-  }
-  .favorite-link {
-    font-size: 2.2em;
   }
 }
 
-
 @media only screen and (max-width: 1024px) {
-  .heading-text{
+  .heading-text {
     font-size: 3.8em;
   }
   .heading-text-container {
-    justify-content: space-around;
     margin-left: 25%;
-    width: 100vw;
   }
   .favorite-link {
     font-size: 1.8em;
   }
 }
 
-
 @media only screen and (max-width: 768px) {
-  .heading-text{
+  .heading-text {
     font-size: 3.8em;
   }
-  .heading-text-container {
-    justify-content: space-around;
-    width: 100vw;
-  }
   .favorites-link-container {
     margin-left: -0.3vw;
     margin-top: 1.4vh;
@@ -103,48 +90,8 @@
 }
 
 @media only screen and (max-width: 425px) {
-  .heading-text{
-    font-size: 2.8em;
-  }
-  .heading-text-container {
-    justify-content: space-around;
-    width: 100vw;
-  }
-  .favorites-link-container {
-    margin-left: -0.3vw;
-    margin-top: 1.4vh;
-  }
-  .favorite-link {
-    font-size: 0.8em;
-  }
-}
-
-
-@media only screen and (max-width: 425px) {
-  .heading-text{
+  .heading-text {
     font-size: 2.4em;
-  }
-  .heading-text-container {
-    justify-content: space-around;
-    width: 100vw;
-  }
-  .favorites-link-container {
-    margin-left: -0.3vw;
-    margin-top: 1.4vh;
-  }
-  .favorite-link {
-    font-size: 0.8em;
-  }
-}
-
-
-@media only screen and (max-width: 425px) {
-  .heading-text{
-    font-size: 2.4em;
-  }
-  .heading-text-container {
-    justify-content: space-around;
-    width: 100vw;
   }
   .favorites-link-container {
     margin-left: -0.3vw;

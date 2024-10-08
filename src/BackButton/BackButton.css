@@ -1,5 +1,5 @@
 .btn-container {
- display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   width: 10vw;
@@ -7,15 +7,14 @@
 }
 
 .back-text {
-  font-size: 2.2em;
+  font-size: 2.2em; /* Default size for larger screens */
   align-self: center;
   border: none;
-  margin-top: 0em;
-  font-family: Salsa;
+  font-family: 'Salsa', cursive;
   font-weight: bolder;
   cursor: pointer;
+  margin-top: 0; /* No need to specify units for 0 */
 }
-
 
 .back-link {
   color: #57886c;
@@ -23,17 +22,13 @@
   margin-left: 1vw;
 }
 
-
-
-
-
+/* Media Queries */
 @media only screen and (max-width: 1024px) {
   .back-text {
     font-size: 4.2em;
     margin: 2.8vh 1.4vw;
   }
 }
-
 
 @media only screen and (max-width: 768px) {
   .back-text {
@@ -49,7 +44,6 @@
   }
 }
 
-
 @media only screen and (max-width: 375px) {
   .back-text {
     font-size: 1.8em;
@@ -59,6 +53,6 @@
 
 @media only screen and (max-width: 320px) {
   .back-text {
-    font-size: 1.8em;
+    font-size: 1.8em; /* Same as 375px, no margin needed */
   }
 }
