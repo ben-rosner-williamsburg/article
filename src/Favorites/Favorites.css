@@ -39,7 +39,7 @@
   align-items: center;
 }
 
-
+/* Media Queries */
 @media only screen and (max-width: 1024px) {
   .favorites-container {
     padding: 1em;
@@ -47,8 +47,6 @@
   .img-work-favorite {
     width: 40vw;
     height: 55vh;
-    align-self: center;
-    box-shadow: 0.5em 0.5em 0.5em 0.5em black;
   }
   .no-img-text {
     width: 50vw;
@@ -59,19 +57,15 @@
 @media only screen and (max-width: 768px) {
   .favorites-container {
     padding: 3.8em;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
     grid-gap: 1.8em;
+    align-items: center;
   }
   .img-work-favorite {
     width: 50vw;
     height: 55vh;
-    align-self: center;
-    box-shadow: 0.5em 0.5em 0.5em 0.5em black;
   }
   .no-img-text {
-    width: 50vw;
     margin-left: 5.8em;
   }
   .remove-fave-container {
@@ -80,7 +74,7 @@
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 425px){
   .favorites-container {
     display: flex;
     flex-direction: column;
@@ -90,58 +84,9 @@
   .img-work-favorite {
     width: 50vw;
     height: 25vh;
-    align-self: center;
-    box-shadow: 0.5em 0.5em 0.5em 0.5em black;
   }
   .no-img-text {
-    width: 50vw;
     margin-left: 3.2em;
-  }
-  .remove-fave-container {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .favorites-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50vw;
-  }
-  .img-work-favorite {
-    width: 50vw;
-    height: 25vh;
-    align-self: center;
-    box-shadow: 0.5em 0.5em 0.5em 0.5em black;
-  }
-  .no-img-text {
-    width: 50vw;
-    margin-left: 3.2em;
-  }
-  .remove-fave-container {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .favorites-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50vw;
-  }
-  .img-work-favorite {
-    width: 50vw;
-    height: 25vh;
-    align-self: center;
-    box-shadow: 0.5em 0.5em 0.5em 0.5em black;
-  }
-  .no-img-text {
-    width: 50vw;
-    margin-left: 2.8em;
   }
   .remove-fave-container {
     display: flex;
