@@ -44,12 +44,19 @@ const fetchWithRetry = async (url, options = {}, retries = 3) => {
 
 export const getArtworks = async () => {
   try {
-    if (!REACT_APP_API_KEY) {
-      throw new Error('API key is missing. Please check your environment configuration.');
+    // Debug logging
+    console.log('Environment check:', {
+      nodeEnv: process.env.NODE_ENV,
+      apiKeyExists: !!process.env.REACT_APP_API_KEY,
+      apiKeyLength: process.env.REACT_APP_API_KEY?.length || 0
+    });
+
+    if (!REACT_APP_API_KEY || REACT_APP_API_KEY === 'your_harvard_art_museums_api_key_here') {
+      throw new Error('API key is missing or not configured. Please set REACT_APP_API_KEY in your .env file.');
     }
 
     const url = `https://api.harvardartmuseums.org/object?apikey=${REACT_APP_API_KEY}&hasimage=1&classification=Paintings&size=21&sort`;
-    console.log('Fetching artworks from:', url.replace(REACT_APP_API_KEY, '[API_KEY]'));
+    console.log('Fetching artworks from:', url.replace(REACT_APP_API_KEY, '[API_KEY_HIDDEN]'));
     
     const data = await fetchWithRetry(url);
     
@@ -71,8 +78,8 @@ export const getArtworks = async () => {
 
 export const getArtwork = async (id) => {
   try {
-    if (!REACT_APP_API_KEY) {
-      throw new Error('API key is missing. Please check your environment configuration.');
+    if (!REACT_APP_API_KEY || REACT_APP_API_KEY === 'your_harvard_art_museums_api_key_here') {
+      throw new Error('API key is missing or not configured. Please set REACT_APP_API_KEY in your .env file.');
     }
 
     if (!id) {
@@ -80,7 +87,7 @@ export const getArtwork = async (id) => {
     }
 
     const url = `https://api.harvardartmuseums.org/object?apikey=${REACT_APP_API_KEY}&id=${id}`;
-    console.log('Fetching artwork from:', url.replace(REACT_APP_API_KEY, '[API_KEY]'));
+    console.log('Fetching artwork from:', url.replace(REACT_APP_API_KEY, '[API_KEY_HIDDEN]'));
     
     const data = await fetchWithRetry(url);
     
