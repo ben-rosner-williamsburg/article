@@ -77,10 +77,18 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  background: linear-gradient(
+    transparent 0%, 
+    rgba(0, 0, 0, 0.3) 20%, 
+    rgba(0, 0, 0, 0.7) 60%, 
+    rgba(0, 0, 0, 0.95) 100%
+  );
   padding: var(--spacing-xl) var(--spacing-md) var(--spacing-md);
   transform: translateY(100%);
   transition: var(--transition);
+  min-height: 120px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .artwork-card:hover .artwork-overlay {
@@ -89,6 +97,7 @@
 
 .artwork-info {
   color: white;
+  width: 100%;
 }
 
 .artwork-title {
@@ -101,18 +110,26 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  color: #ffffff;
 }
 
 .artwork-artist {
   font-size: 0.9rem;
   margin: 0 0 var(--spacing-xs);
-  opacity: 0.9;
+  opacity: 0.95;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  color: #f0f0f0;
+  font-weight: 500;
 }
 
 .artwork-date {
   font-size: 0.8rem;
   margin: 0;
-  opacity: 0.7;
+  opacity: 0.9;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  color: #e0e0e0;
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {
@@ -127,6 +144,11 @@
   .artwork-artist {
     font-size: 0.85rem;
   }
+  
+  .artwork-overlay {
+    min-height: 100px;
+    padding: var(--spacing-lg) var(--spacing-sm) var(--spacing-sm);
+  }
 }
 
 @media (max-width: 425px) {
@@ -136,5 +158,19 @@
   
   .artwork-overlay {
     padding: var(--spacing-md) var(--spacing-sm) var(--spacing-sm);
+    min-height: 80px;
+  }
+  
+  .artwork-title {
+    font-size: 0.95rem;
+    -webkit-line-clamp: 1;
+  }
+  
+  .artwork-artist {
+    font-size: 0.8rem;
+  }
+  
+  .artwork-date {
+    font-size: 0.75rem;
   }
 }
