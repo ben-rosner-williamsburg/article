@@ -21,7 +21,7 @@
 .back-link-container {
   display: flex;
   align-items: center;
-  width: 80px;
+  width: 60px;
   justify-content: flex-start;
 }
 
@@ -37,7 +37,7 @@
 .favorites-link-container {
   display: flex;
   align-items: center;
-  width: 80px;
+  width: 60px;
   justify-content: flex-end;
 }
 
@@ -70,16 +70,16 @@
   color: var(--cream);
   text-decoration: none;
   font-family: 'Salsa', cursive;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: bold;
-  padding: var(--spacing-xs) var(--spacing-sm);
+  padding: 6px 8px;
   border-radius: var(--border-radius);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   transition: var(--transition);
   border: 2px solid transparent;
   white-space: nowrap;
-  min-height: 40px;
+  min-height: 36px;
 }
 
 .favorite-link:hover {
@@ -89,8 +89,8 @@
 }
 
 .heart-icon {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   stroke-width: 2;
   flex-shrink: 0;
 }
@@ -108,7 +108,7 @@
   
   .back-link-container,
   .favorites-link-container {
-    width: 70px;
+    width: 50px;
   }
 }
 
@@ -128,19 +128,19 @@
   }
   
   .favorite-link {
-    padding: var(--spacing-sm);
-    min-width: 44px;
+    padding: 6px;
+    min-width: 36px;
     justify-content: center;
   }
   
   .heart-icon {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
   }
   
   .back-link-container,
   .favorites-link-container {
-    width: 50px;
+    width: 40px;
   }
 }
 
@@ -155,18 +155,18 @@
   }
   
   .favorite-link {
-    padding: var(--spacing-xs);
-    min-width: 36px;
-    min-height: 36px;
+    padding: 4px;
+    min-width: 32px;
+    min-height: 32px;
   }
   
   .heart-icon {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
   }
   
   .back-link-container,
   .favorites-link-container {
-    width: 44px;
+    width: 36px;
   }
 }
