@@ -21,7 +21,7 @@
 .back-link-container {
   display: flex;
   align-items: center;
-  width: 120px;
+  width: 80px;
   justify-content: flex-start;
 }
 
@@ -37,7 +37,7 @@
 .favorites-link-container {
   display: flex;
   align-items: center;
-  width: 120px;
+  width: 80px;
   justify-content: flex-end;
 }
 
@@ -70,9 +70,9 @@
   color: var(--cream);
   text-decoration: none;
   font-family: 'Salsa', cursive;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-sm);
   border-radius: var(--border-radius);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -80,6 +80,8 @@
   border: 2px solid transparent;
   white-space: nowrap;
   min-height: 44px;
+  min-width: 44px;
+  justify-content: center;
 }
 
 .favorite-link:hover {
@@ -89,10 +91,14 @@
 }
 
 .heart-icon {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   stroke-width: 2;
   flex-shrink: 0;
+}
+
+.favorite-link span {
+  display: none;
 }
 
 /* Media Queries */
@@ -106,14 +112,9 @@
     font-size: 2rem;
   }
   
-  .favorite-link {
-    font-size: 1rem;
-    padding: var(--spacing-sm) var(--spacing-md);
-  }
-  
   .back-link-container,
   .favorites-link-container {
-    width: 100px;
+    width: 70px;
   }
 }
 
@@ -128,19 +129,20 @@
     font-size: 1.8rem;
   }
   
-  .favorite-link span {
-    display: none;
+  .favorite-link {
+    padding: var(--spacing-xs);
+    min-width: 40px;
+    min-height: 40px;
   }
   
-  .favorite-link {
-    padding: var(--spacing-sm);
-    min-width: 44px;
-    justify-content: center;
+  .heart-icon {
+    width: 16px;
+    height: 16px;
   }
   
   .back-link-container,
   .favorites-link-container {
-    width: 80px;
+    width: 60px;
   }
 }
 
@@ -155,18 +157,18 @@
   }
   
   .favorite-link {
-    font-size: 1rem;
     padding: var(--spacing-xs);
-    min-width: 40px;
+    min-width: 36px;
+    min-height: 36px;
   }
   
   .heart-icon {
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
   }
   
   .back-link-container,
   .favorites-link-container {
-    width: 60px;
+    width: 50px;
   }
 }
