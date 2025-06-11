@@ -21,7 +21,8 @@ function App() {
         
         // Add environment check
         if (!process.env.REACT_APP_API_KEY) {
-          throw new Error("API key is not configured. Please check your environment variables.");
+          setError("API key is not configured. Please check your environment variables.");
+          return;
         }
         
         console.log('Loading artworks...');
@@ -31,26 +32,30 @@ function App() {
           console.log(`Successfully loaded ${artworkData.records.length} artworks`);
           setArtworks(artworkData.records);
         } else {
-          throw new Error("No artwork data received from API");
+          setError("No artwork data received from API");
         }
       } catch (err) {
         console.error("Error loading artworks:", err);
         
-        // Provide more specific error messages
+        // Ensure we're setting a string error message, not an object
         let errorMessage = "An error occurred while loading artworks";
         
-        if (err.message.includes('API key')) {
-          errorMessage = "API configuration error. Please check your setup.";
-        } else if (err.message.includes('HTTP 500')) {
-          errorMessage = "Server error. The Harvard Art Museums API is currently unavailable.";
-        } else if (err.message.includes('HTTP 429')) {
-          errorMessage = "Too many requests. Please wait a moment and try again.";
-        } else if (err.message.includes('HTTP 403')) {
-          errorMessage = "Access denied. Please check your API key.";
-        } else if (err.message.includes('Failed to fetch') || err.message.includes('NetworkError')) {
-          errorMessage = "Network error. Please check your internet connection.";
-        } else if (err.message) {
-          errorMessage = err.message;
+        if (err && typeof err === 'object' && err.message) {
+          if (err.message.includes('API key')) {
+            errorMessage = "API configuration error. Please check your setup.";
+          } else if (err.message.includes('HTTP 500')) {
+            errorMessage = "500 Error! Try again later!";
+          } else if (err.message.includes('HTTP 429')) {
+            errorMessage = "Too many requests. Please wait a moment and try again.";
+          } else if (err.message.includes('HTTP 403')) {
+            errorMessage = "Access denied. Please check your API key.";
+          } else if (err.message.includes('Failed to fetch') || err.message.includes('NetworkError')) {
+            errorMessage = "Network error. Please check your internet connection.";
+          } else {
+            errorMessage = err.message;
+          }
+        } else if (typeof err === 'string') {
+          errorMessage = err;
         }
         
         setError(errorMessage);

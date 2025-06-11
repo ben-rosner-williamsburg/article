@@ -34,8 +34,18 @@ function Details({ addFave }) {
         setError('Artwork not found');
       }
     } catch (err) {
-      setError('Failed to load artwork details');
-      console.error(err);
+      console.error('Error fetching artwork:', err);
+      
+      // Ensure we set a string error message
+      let errorMessage = 'Failed to load artwork details';
+      
+      if (err && typeof err === 'object' && err.message) {
+        errorMessage = err.message;
+      } else if (typeof err === 'string') {
+        errorMessage = err;
+      }
+      
+      setError(errorMessage);
     } finally {
       setLoading(false);
     }

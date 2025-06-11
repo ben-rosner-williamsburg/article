@@ -17,16 +17,24 @@ const fetchWithRetry = async (url, options = {}, retries = 3) => {
         return await response.json();
       }
 
+      // Create a proper error message based on status
+      const errorMessage = `HTTP ${response.status}: ${response.statusText}`;
+      
       // If it's the last retry or a client error (4xx), throw immediately
       if (i === retries - 1 || (response.status >= 400 && response.status < 500)) {
-        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        throw new Error(errorMessage);
       }
 
       // Wait before retrying (exponential backoff)
       await new Promise(resolve => setTimeout(resolve, Math.pow(2, i) * 1000));
     } catch (error) {
       if (i === retries - 1) {
-        throw error;
+        // Ensure we throw a proper Error object with a string message
+        if (error instanceof Error) {
+          throw error;
+        } else {
+          throw new Error(String(error));
+        }
       }
       // Wait before retrying
       await new Promise(resolve => setTimeout(resolve, Math.pow(2, i) * 1000));
@@ -52,7 +60,12 @@ export const getArtworks = async () => {
     return data;
   } catch (error) {
     console.error('Error fetching artworks:', error);
-    throw error;
+    // Ensure we always throw a proper Error object
+    if (error instanceof Error) {
+      throw error;
+    } else {
+      throw new Error(String(error));
+    }
   }
 };
 
@@ -78,6 +91,11 @@ export const getArtwork = async (id) => {
     return data;
   } catch (error) {
     console.error('Error fetching artwork:', error);
-    throw error;
+    // Ensure we always throw a proper Error object
+    if (error instanceof Error) {
+      throw error;
+    } else {
+      throw new Error(String(error));
+    }
   }
 };
