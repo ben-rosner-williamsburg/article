@@ -75,8 +75,8 @@
   border: 2px solid transparent;
   white-space: nowrap;
   min-height: 44px;
-  gap: var(--spacing-xs);
   text-align: center;
+  position: relative;
 }
 
 .favorite-link:hover {
@@ -90,10 +90,14 @@
   height: 20px;
   stroke-width: 2;
   flex-shrink: 0;
+  position: absolute;
+  left: var(--spacing-sm);
 }
 
 .favorite-link span {
-  margin-left: -4px; /* Increased adjustment to move text more to the left */
+  flex: 1;
+  text-align: center;
+  padding: 0 calc(20px + var(--spacing-sm)); /* Account for icon width and spacing */
 }
 
 /* Media Queries */
@@ -134,6 +138,7 @@
   .heart-icon {
     width: 18px;
     height: 18px;
+    position: static;
   }
 }
 
