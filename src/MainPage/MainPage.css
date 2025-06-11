@@ -58,6 +58,27 @@
   font-size: 1.1rem;
   max-width: 500px;
   line-height: 1.5;
+  margin-bottom: var(--spacing-lg);
+}
+
+.retry-button {
+  background: var(--primary-red);
+  color: white;
+  border: none;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius);
+  font-family: 'Salsa', cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(108, 15, 22, 0.3);
+}
+
+.retry-button:hover {
+  background: #8b1420;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 15, 22, 0.4);
 }
 
 .no-artworks {
@@ -91,6 +112,11 @@
   
   .error-message {
     font-size: 1.5rem;
+  }
+  
+  .retry-button {
+    font-size: 1.1rem;
+    padding: var(--spacing-sm) var(--spacing-md);
   }
 }
 

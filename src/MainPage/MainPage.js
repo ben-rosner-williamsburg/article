@@ -34,6 +34,10 @@ const MainPage = ({ artworks, error, loading }) => {
     setSearchTerm(term);
   };
 
+  const handleRetry = () => {
+    window.location.reload();
+  };
+
   if (loading) {
     return (
       <main className='main-page'>
@@ -53,10 +57,18 @@ const MainPage = ({ artworks, error, loading }) => {
           animate={{ opacity: 1, y: 0 }}
         >
           <div className="error-icon">⚠️</div>
-          <h1 className="error-message">500 Error! Try again later!</h1>
+          <h1 className="error-message">Unable to Load Artworks</h1>
           <p className="error-description">
-            We're having trouble loading the artworks. Please check your connection and try again.
+            {error}
           </p>
+          <motion.button
+            className="retry-button"
+            onClick={handleRetry}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Try Again
+          </motion.button>
         </motion.div>
       </main>
     );

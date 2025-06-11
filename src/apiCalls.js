@@ -1,21 +1,83 @@
 const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY;
 
-export const getArtworks = () => {
-  return fetch(`https://api.harvardartmuseums.org/object?apikey=${REACT_APP_API_KEY}&hasimage=1&classification=Paintings&size=21&sort`)
-  .then((response) => {
-    if(response.ok){
-      return response.json()
-    }
-  })
-  .catch((err => console.error(err)))
-}
+// Add retry logic and better error handling
+const fetchWithRetry = async (url, options = {}, retries = 3) => {
+  for (let i = 0; i < retries; i++) {
+    try {
+      const response = await fetch(url, {
+        ...options,
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          ...options.headers,
+        },
+      });
 
-export const getArtwork = (id) => {
-  return fetch(`https://api.harvardartmuseums.org/object?apikey=${REACT_APP_API_KEY}&id=${id}`)
-  .then((response) => {
-    if(response.ok){
-      return response.json()
+      if (response.ok) {
+        return await response.json();
+      }
+
+      // If it's the last retry or a client error (4xx), throw immediately
+      if (i === retries - 1 || (response.status >= 400 && response.status < 500)) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+
+      // Wait before retrying (exponential backoff)
+      await new Promise(resolve => setTimeout(resolve, Math.pow(2, i) * 1000));
+    } catch (error) {
+      if (i === retries - 1) {
+        throw error;
+      }
+      // Wait before retrying
+      await new Promise(resolve => setTimeout(resolve, Math.pow(2, i) * 1000));
     }
-  })
-  .catch((err => console.error(err)))
-}
+  }
+};
+
+export const getArtworks = async () => {
+  try {
+    if (!REACT_APP_API_KEY) {
+      throw new Error('API key is missing. Please check your environment configuration.');
+    }
+
+    const url = `https://api.harvardartmuseums.org/object?apikey=${REACT_APP_API_KEY}&hasimage=1&classification=Paintings&size=21&sort`;
+    console.log('Fetching artworks from:', url.replace(REACT_APP_API_KEY, '[API_KEY]'));
+    
+    const data = await fetchWithRetry(url);
+    
+    if (!data || !data.records) {
+      throw new Error('Invalid response format from API');
+    }
+
+    return data;
+  } catch (error) {
+    console.error('Error fetching artworks:', error);
+    throw error;
+  }
+};
+
+export const getArtwork = async (id) => {
+  try {
+    if (!REACT_APP_API_KEY) {
+      throw new Error('API key is missing. Please check your environment configuration.');
+    }
+
+    if (!id) {
+      throw new Error('Artwork ID is required');
+    }
+
+    const url = `https://api.harvardartmuseums.org/object?apikey=${REACT_APP_API_KEY}&id=${id}`;
+    console.log('Fetching artwork from:', url.replace(REACT_APP_API_KEY, '[API_KEY]'));
+    
+    const data = await fetchWithRetry(url);
+    
+    if (!data || !data.records) {
+      throw new Error('Invalid response format from API');
+    }
+
+    return data;
+  } catch (error) {
+    console.error('Error fetching artwork:', error);
+    throw error;
+  }
+};
