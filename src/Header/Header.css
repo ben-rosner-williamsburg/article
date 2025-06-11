@@ -21,7 +21,7 @@
 .back-link-container {
   display: flex;
   align-items: center;
-  width: 60px;
+  width: 80px;
   justify-content: flex-start;
 }
 
@@ -37,8 +37,8 @@
 .favorites-link-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 60px;
+  justify-content: flex-end;
+  width: 80px;
 }
 
 .logo-link {
@@ -81,7 +81,6 @@
   border: 2px solid transparent;
   white-space: nowrap;
   min-height: 36px;
-  width: 100%;
   text-align: center;
 }
 
@@ -111,7 +110,7 @@
   
   .back-link-container,
   .favorites-link-container {
-    width: 50px;
+    width: 70px;
   }
 }
 
@@ -143,7 +142,7 @@
   
   .back-link-container,
   .favorites-link-container {
-    width: 40px;
+    width: 50px;
   }
 }
 
@@ -170,6 +169,6 @@
   
   .back-link-container,
   .favorites-link-container {
-    width: 36px;
+    width: 45px;
   }
 }
