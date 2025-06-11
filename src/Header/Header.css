@@ -8,29 +8,31 @@
 }
 
 .header-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
   padding: var(--spacing-md) var(--spacing-lg);
   max-width: 1400px;
   margin: 0 auto;
+  gap: var(--spacing-md);
 }
 
-.back-link-container,
-.favorites-link-container {
-  flex: 1;
+.back-link-container {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.heading-text-container {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .favorites-link-container {
-  justify-content: flex-end;
-}
-
-.heading-text-container {
-  flex: 2;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .logo-link {
@@ -48,6 +50,7 @@
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   transition: var(--transition);
+  white-space: nowrap;
 }
 
 .heading-text:hover {
@@ -69,6 +72,8 @@
   backdrop-filter: blur(10px);
   transition: var(--transition);
   border: 2px solid transparent;
+  white-space: nowrap;
+  min-height: 44px;
 }
 
 .favorite-link:hover {
@@ -81,6 +86,7 @@
   width: 20px;
   height: 20px;
   stroke-width: 2;
+  flex-shrink: 0;
 }
 
 /* Media Queries */
@@ -95,13 +101,14 @@
   
   .favorite-link {
     font-size: 1.1rem;
-    padding: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
   }
 }
 
 @media (max-width: 768px) {
   .header-content {
     padding: var(--spacing-sm) var(--spacing-md);
+    gap: var(--spacing-sm);
   }
   
   .heading-text {
@@ -122,18 +129,30 @@
 @media (max-width: 425px) {
   .header-content {
     padding: var(--spacing-sm);
+    grid-template-columns: auto 1fr auto;
+    gap: var(--spacing-xs);
   }
   
   .heading-text {
     font-size: 1.8rem;
   }
   
-  .back-link-container,
-  .favorites-link-container {
-    flex: 0.8;
+  .favorite-link {
+    font-size: 1rem;
   }
   
-  .heading-text-container {
-    flex: 1.4;
+  .heart-icon {
+    width: 18px;
+    height: 18px;
   }
+}
+
+/* Ensure proper spacing when only one side element is present */
+.header-content:has(.back-link-container:empty) .favorites-link-container,
+.header-content:has(.favorites-link-container:empty) .back-link-container {
+  visibility: hidden;
+}
+
+.header-content:has(.back-link-container:empty) .favorites-link-container {
+  visibility: visible;
 }
