@@ -1,103 +1,139 @@
 .header {
+  background: linear-gradient(135deg, var(--primary-red) 0%, #8b1420 100%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.header-content {
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  background-color: #6c0f16;
-  box-sizing: border-box;
-  box-shadow: .5em .5em .5em .15em black;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md) var(--spacing-lg);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.back-link-container,
+.favorites-link-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.favorites-link-container {
+  justify-content: flex-end;
 }
 
 .heading-text-container {
+  flex: 2;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  width: 100vw;
+  justify-content: center;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .heading-text {
   font-family: 'Salsa', cursive;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   letter-spacing: 0.11em;
-  color: #f4f3ee;
+  color: var(--cream);
   font-style: italic;
-  font-weight: bolder;
-  text-align: center;
-  margin: 0 auto;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: var(--transition);
 }
 
-.header .back-link,
-.header .favorite-link {
-  color: #f4f3ee;
+.heading-text:hover {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-.header .back-link {
-  margin-left: 1vw;
-  margin-top: 3vh;
-}
-
-.header .favorite-link {
-  margin-right: 1vw;
-}
-
-.favorites-link-container, .back-btn-container {
+.favorite-link {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 10vw;
-  height: 20vh;
-}
-
-.back-text, .favorite-link {
-  font-size: 2.2em;
-  align-self: center;
-  border: none;
-  font-family: 'Salsa';
-  font-weight: bolder;
-  cursor: pointer;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--cream);
   text-decoration: none;
+  font-family: 'Salsa', cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: var(--transition);
+  border: 2px solid transparent;
 }
 
-@media only screen and (max-width: 1440px) {
+.favorite-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.heart-icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .header-content {
+    padding: var(--spacing-md);
+  }
+  
   .heading-text {
-    font-size: 3.8em;
+    font-size: 2.2rem;
+  }
+  
+  .favorite-link {
+    font-size: 1.1rem;
+    padding: var(--spacing-sm);
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .heading-text {
-    font-size: 3.8em;
+@media (max-width: 768px) {
+  .header-content {
+    padding: var(--spacing-sm) var(--spacing-md);
   }
+  
+  .heading-text {
+    font-size: 2rem;
+  }
+  
+  .favorite-link span {
+    display: none;
+  }
+  
+  .favorite-link {
+    padding: var(--spacing-sm);
+    min-width: 44px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .header-content {
+    padding: var(--spacing-sm);
+  }
+  
+  .heading-text {
+    font-size: 1.8rem;
+  }
+  
+  .back-link-container,
+  .favorites-link-container {
+    flex: 0.8;
+  }
+  
   .heading-text-container {
-    margin-left: 25%;
-  }
-  .favorite-link {
-    font-size: 1.8em;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .heading-text {
-    font-size: 3.8em;
-  }
-  .favorites-link-container {
-    margin-left: -0.3vw;
-    margin-top: 1.4vh;
-  }
-  .favorite-link {
-    font-size: 0.8em;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .heading-text {
-    font-size: 2.4em;
-  }
-  .favorites-link-container {
-    margin-left: -0.3vw;
-    margin-top: 1.4vh;
-  }
-  .favorite-link {
-    font-size: 0.8em;
+    flex: 1.4;
   }
 }
