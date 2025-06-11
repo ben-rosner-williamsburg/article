@@ -21,7 +21,7 @@
 .back-link-container {
   display: flex;
   align-items: center;
-  width: 80px;
+  width: 100px;
   justify-content: flex-start;
 }
 
@@ -37,7 +37,7 @@
 .favorites-link-container {
   display: flex;
   align-items: center;
-  width: 80px;
+  width: 100px;
   justify-content: flex-end;
 }
 
@@ -72,7 +72,7 @@
   font-family: 'Salsa', cursive;
   font-size: 1rem;
   font-weight: bold;
-  padding: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--border-radius);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -80,8 +80,6 @@
   border: 2px solid transparent;
   white-space: nowrap;
   min-height: 44px;
-  min-width: 44px;
-  justify-content: center;
 }
 
 .favorite-link:hover {
@@ -97,10 +95,6 @@
   flex-shrink: 0;
 }
 
-.favorite-link span {
-  display: none;
-}
-
 /* Media Queries */
 @media (max-width: 1024px) {
   .header-content {
@@ -114,7 +108,7 @@
   
   .back-link-container,
   .favorites-link-container {
-    width: 70px;
+    width: 90px;
   }
 }
 
@@ -129,10 +123,14 @@
     font-size: 1.8rem;
   }
   
+  .favorite-link span {
+    display: none;
+  }
+  
   .favorite-link {
-    padding: var(--spacing-xs);
-    min-width: 40px;
-    min-height: 40px;
+    padding: var(--spacing-sm);
+    min-width: 44px;
+    justify-content: center;
   }
   
   .heart-icon {
