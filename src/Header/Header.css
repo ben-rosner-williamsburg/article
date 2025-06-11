@@ -10,7 +10,7 @@
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: var(--spacing-md) var(--spacing-lg);
   max-width: 900px;
   margin: 0 auto;
@@ -19,26 +19,23 @@
 }
 
 .back-link-container {
+  position: absolute;
+  left: var(--spacing-lg);
   display: flex;
   align-items: center;
-  width: 80px;
-  justify-content: flex-start;
 }
 
 .heading-text-container {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .favorites-link-container {
+  position: absolute;
+  right: var(--spacing-lg);
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  width: 80px;
 }
 
 .logo-link {
@@ -71,9 +68,9 @@
   color: var(--cream);
   text-decoration: none;
   font-family: 'Salsa', cursive;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: bold;
-  padding: 6px 8px;
+  padding: 8px 12px;
   border-radius: var(--border-radius);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -91,8 +88,8 @@
 }
 
 .heart-icon {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   stroke-width: 2;
   flex-shrink: 0;
 }
@@ -108,9 +105,12 @@
     font-size: 2rem;
   }
   
-  .back-link-container,
+  .back-link-container {
+    left: var(--spacing-md);
+  }
+  
   .favorites-link-container {
-    width: 70px;
+    right: var(--spacing-md);
   }
 }
 
@@ -130,19 +130,22 @@
   }
   
   .favorite-link {
-    padding: 6px;
+    padding: 8px;
     min-width: 36px;
     justify-content: center;
   }
   
   .heart-icon {
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
   }
   
-  .back-link-container,
+  .back-link-container {
+    left: var(--spacing-md);
+  }
+  
   .favorites-link-container {
-    width: 50px;
+    right: var(--spacing-md);
   }
 }
 
@@ -157,18 +160,21 @@
   }
   
   .favorite-link {
-    padding: 4px;
+    padding: 6px;
     min-width: 32px;
     min-height: 32px;
   }
   
   .heart-icon {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
   }
   
-  .back-link-container,
+  .back-link-container {
+    left: var(--spacing-sm);
+  }
+  
   .favorites-link-container {
-    width: 45px;
+    right: var(--spacing-sm);
   }
 }
