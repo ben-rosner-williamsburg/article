@@ -67,7 +67,7 @@
   font-family: 'Salsa', cursive;
   font-size: 1.1rem;
   font-weight: bold;
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-sm);
   border-radius: var(--border-radius);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -77,6 +77,8 @@
   min-height: 44px;
   text-align: center;
   position: relative;
+  width: auto;
+  min-width: 120px;
 }
 
 .favorite-link:hover {
@@ -97,7 +99,7 @@
 .favorite-link span {
   flex: 1;
   text-align: center;
-  padding: 0 calc(20px + var(--spacing-sm)); /* Account for icon width and spacing */
+  padding: 0 calc(20px + var(--spacing-xs)); /* Reduced padding for narrower button */
 }
 
 /* Media Queries */
@@ -112,6 +114,7 @@
   
   .favorite-link {
     font-size: 1rem;
+    min-width: 110px;
   }
 }
 
