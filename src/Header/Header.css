@@ -92,6 +92,10 @@
   flex-shrink: 0;
 }
 
+.favorite-link span {
+  margin-left: -2px; /* Slight adjustment to move text left for better visual centering */
+}
+
 /* Media Queries */
 @media (max-width: 1024px) {
   .header-content {
