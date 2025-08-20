@@ -86,7 +86,7 @@
   padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
   transform: translateY(100%);
   transition: var(--transition);
-  min-height: 140px;
+  min-height: 160px;
   display: flex;
   align-items: flex-end;
 }
@@ -110,8 +110,9 @@
   color: #ffffff;
   word-wrap: break-word;
   hyphens: auto;
-  max-height: none;
-  overflow: visible;
+  display: block;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .artwork-artist {
@@ -140,6 +141,7 @@
   
   .artwork-title {
     font-size: 1rem;
+    line-height: 1.2;
   }
   
   .artwork-artist {
@@ -147,7 +149,7 @@
   }
   
   .artwork-overlay {
-    min-height: 120px;
+    min-height: 140px;
     padding: var(--spacing-md) var(--spacing-sm) var(--spacing-sm);
   }
 }
@@ -159,12 +161,12 @@
   
   .artwork-overlay {
     padding: var(--spacing-md) var(--spacing-sm) var(--spacing-sm);
-    min-height: 130px;
+    min-height: 150px;
   }
   
   .artwork-title {
     font-size: 0.95rem;
-    line-height: 1.2;
+    line-height: 1.3;
   }
   
   .artwork-artist {
