@@ -17,7 +17,7 @@
 .error-page-title {
   color: var(--cream);
   font-family: 'Salsa', cursive;
-  font-style: italic;
+  font-style: normal;
   font-weight: bold;
   font-size: 2.5rem;
   letter-spacing: 0.11em;
@@ -70,6 +70,7 @@
 }
 
 .error-description {
+  font-family: 'Salsa', cursive;
   color: rgba(244, 243, 238, 0.8);
   font-size: 1.2rem;
   line-height: 1.6;
