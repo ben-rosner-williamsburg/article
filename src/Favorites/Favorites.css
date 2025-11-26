@@ -34,6 +34,7 @@
 }
 
 .no-favorites-text {
+  font-family: 'Salsa', cursive;
   color: rgba(244, 243, 238, 0.8);
   font-size: 1.2rem;
   max-width: 500px;
@@ -128,6 +129,7 @@
 }
 
 .favorite-artist {
+  font-family: 'Salsa', cursive;
   font-size: 0.9rem;
   margin: 0;
   opacity: 0.9;

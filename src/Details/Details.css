@@ -16,7 +16,7 @@
 .detail-heading-text {
   color: var(--cream);
   font-family: 'Salsa', cursive;
-  font-style: italic;
+  font-style: normal;
   font-weight: bold;
   font-size: 2.5rem;
   letter-spacing: 0.11em;
@@ -130,6 +130,7 @@
 }
 
 .info-label {
+  font-family: 'Salsa', cursive;
   font-weight: bold;
   color: var(--primary-green);
   font-size: 0.9rem;
@@ -138,6 +139,7 @@
 }
 
 .info-value {
+  font-family: 'Salsa', cursive;
   color: var(--dark-green);
   line-height: 1.4;
 }
@@ -158,6 +160,7 @@
 }
 
 .artwork-description p {
+  font-family: 'Salsa', cursive;
   margin: 0;
   line-height: 1.6;
   color: var(--dark-green);
@@ -168,6 +171,7 @@
 }
 
 .museum-link {
+  font-family: 'Salsa', cursive;
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-xs);

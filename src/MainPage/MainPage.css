@@ -54,6 +54,7 @@
 }
 
 .error-description {
+  font-family: 'Salsa', cursive;
   color: rgba(244, 243, 238, 0.8);
   font-size: 1.1rem;
   max-width: 500px;

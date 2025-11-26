@@ -31,6 +31,7 @@
 }
 
 .error-description {
+  font-family: 'Salsa', cursive;
   color: var(--dark-green);
   font-size: 1.2rem;
   line-height: 1.6;
@@ -46,6 +47,7 @@
 }
 
 .error-details summary {
+  font-family: 'Salsa', cursive;
   cursor: pointer;
   font-weight: bold;
   color: var(--primary-red);
